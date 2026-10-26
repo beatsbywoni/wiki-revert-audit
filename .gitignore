@@ -1,0 +1,7 @@
+01_raw/
+02_derived/
+04_output/*.parquet
+*.tsv.bz2
+*.parquet
+.DS_Store
+__pycache__/
