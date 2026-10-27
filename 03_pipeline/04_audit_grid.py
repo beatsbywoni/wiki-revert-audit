@@ -82,6 +82,77 @@ def grid_for(df, boot, rng, label="", filters=None, base_f="F0", variant="strict
     return pd.DataFrame(rows)
 
 
+def h1_window_test(df, boot, rng, f0="F0d3", f2="F2r"):
+    """H1(2026-10-27 확정): replace 변형에서 D = Δ(W24h) − Δ(W∞) > 0 의 단측 부트스트랩 CI(편집자 군집)와 비율 R = Δ(W∞)/Δ(W24h)."""
+    need = [f"{f0}_W24h", f"{f2}_W24h", f"{f0}_Winf", f"{f2}_Winf"]
+    if not all(c in df.columns for c in need):
+        return None
+    sub = df[df["anchor_on_allrevs"].fillna(False).astype(bool)] if "anchor_on_allrevs" in df.columns else df
+    if len(sub) < 50:
+        return None
+    a24 = (sub[f"{f0}_W24h"].astype(float) - sub[f"{f2}_W24h"].astype(float)).to_numpy()
+    ainf = (sub[f"{f0}_Winf"].astype(float) - sub[f"{f2}_Winf"].astype(float)).to_numpy()
+    n = len(a24)
+    idx = rng.integers(0, n, size=(boot, n))
+    d24 = a24[idx].mean(axis=1); dinf = ainf[idx].mean(axis=1)
+    D = (d24 - dinf) * 100
+    R = np.where(d24 > 0, dinf / np.where(d24 > 0, d24, np.nan), np.nan)
+    return dict(n=n, delta24_pp=a24.mean() * 100, deltainf_pp=ainf.mean() * 100,
+                D_pp=(a24.mean() - ainf.mean()) * 100, D_ci90_lo=np.percentile(D, 5), D_ci95_lo=np.percentile(D, 2.5), D_ci95_hi=np.percentile(D, 97.5),
+                R=ainf.mean() / a24.mean() if a24.mean() > 0 else np.nan, R_ci_lo=np.nanpercentile(R, 2.5), R_ci_hi=np.nanpercentile(R, 97.5))
+
+
+def confirmatory_tests(df, boot, rng):
+    """등록 검정 H2(대체율 S)·H3(정의 일치)·H4(OR 최대/최소 비). H1 은 h1_window_test."""
+    out = {}
+    sub = df[df["anchor_on_allrevs"].fillna(False).astype(bool)] if "anchor_on_allrevs" in df.columns else df.iloc[0:0]
+    # H2: S = 1 − Δ(F2r,24h)/Δ(F2 strict,24h), 같은 D3 표본에서. 단측 95% 상한.
+    if len(sub) >= 50 and "F2r_W24h" in sub.columns:
+        ds = (sub["F0_W24h"].astype(float) - sub["F2_W24h"].astype(float)).to_numpy()
+        dr = (sub["F0d3_W24h"].astype(float) - sub["F2r_W24h"].astype(float)).to_numpy()
+        n = len(ds); idx = rng.integers(0, n, size=(boot, n))
+        bs, br = ds[idx].mean(axis=1), dr[idx].mean(axis=1)
+        S = 1 - br / np.where(bs > 0, bs, np.nan)
+        out.update(h2_n=n, h2_delta_strict_pp=ds.mean() * 100, h2_delta_replace_pp=dr.mean() * 100,
+                   h2_S=(1 - dr.mean() / ds.mean()) if ds.mean() > 0 else np.nan,
+                   h2_S_ci95_hi_onesided=np.nanpercentile(S, 95), h2_S_ci_lo=np.nanpercentile(S, 2.5), h2_S_ci_hi=np.nanpercentile(S, 97.5))
+    # H3: 앵커 2020-08-01 이후, D2 vs D3r15 일치율; D1=1,D2=0 중 반경 15 밖 비율
+    if "d3r_is_reverted" in sub.columns:
+        g = sub[sub["anchor_ts"] >= pd.Timestamp("2020-08-01", tz="UTC")]
+        if len(g) >= 50:
+            d1 = g["is_reverted_d1"].astype(bool); d2 = g["is_reverted_d2"].astype(bool); r15 = g["d3r_is_reverted"].astype(bool)
+            x = g[d1 & ~d2]
+            out.update(h3_n=len(g), h3_agree_d2_d3r15=(d2 == r15).mean(), h3_agree_d1_d2=(d1 == d2).mean(),
+                       h3_n_d1only=len(x), h3_d1only_beyond_radius=(~x["d3r_is_reverted"].astype(bool)).mean() if len(x) else np.nan)
+    # H4: strict 9셀 OR 최대/최소 비, 부트스트랩(boot//4) 95% 하한 (numpy 로 빠르게)
+    cells = [(f, w) for w in WINDOWS for f in FILTERS]
+    flags = np.stack([df[f"{f}_{w}"].astype(bool).to_numpy() for f, w in cells], axis=1)  # n × 9
+    ret = df["retained_2_60"].astype(bool).to_numpy()
+    def or_ratio(rows):
+        fl = flags[rows]; rt = ret[rows][:, None]
+        a_ = (fl & rt).sum(0) + 0.5; b_ = (fl & ~rt).sum(0) + 0.5
+        c_ = (~fl & rt).sum(0) + 0.5; d_ = (~fl & ~rt).sum(0) + 0.5
+        ors = (a_ * d_) / (b_ * c_)
+        return ors.max() / ors.min()
+    n = len(df); all_rows = np.arange(n)
+    rr = or_ratio(all_rows)
+    nb = max(100, boot // 4)
+    ratios = [or_ratio(rng.integers(0, n, size=n)) for _ in range(nb)]
+    out.update(h4_or_ratio=rr, h4_or_ratio_ci_lo=np.nanpercentile(ratios, 2.5), h4_or_ratio_ci_hi=np.nanpercentile(ratios, 97.5), h4_boot=nb)
+    # 음성 대조(봇 축): 연도별 셀 중 봇 점유율 < 1% 인 셀의 Δ(F0d3 − F1r, 24h) CI
+    neg = []
+    if "F1r_W24h" in sub.columns:
+        for y, g in sub.groupby("anchor_year"):
+            if len(g) < 50:
+                continue
+            rev = g[g["F0_W24h"]]
+            bot_share = rev["reverter_is_bot"].mean() if len(rev) else np.nan
+            if bot_share < 0.01:
+                d, lo, hi = paired_delta_ci(g["F0d3_W24h"], g["F1r_W24h"], max(200, boot // 10), rng)
+                neg.append(dict(year=int(y), n=len(g), bot_share=bot_share, delta_pp=d, ci_lo=lo, ci_hi=hi, within_0p5=(abs(lo) <= 0.5 and abs(hi) <= 0.5)))
+    return out, pd.DataFrame(neg)
+
+
 def success_rank(df):
     """첫 90일 ≥10 편집 편집자의 success rate: F0 vs F2, W24h·Winf 에서 순위 상관과 하위 10% 이동."""
     e = df[df["n_edits_90d"].fillna(0) >= 10].copy()
@@ -137,6 +208,17 @@ def main():
     by_year.to_csv(os.path.join(o, f"{a.wiki}_grid_by_year.csv"), index=False)
     sr = success_rank(first)
     sr.to_csv(os.path.join(o, f"{a.wiki}_success_rank.csv"), index=False)
+    h1 = h1_window_test(first, a.boot, rng)
+    conf, neg = confirmatory_tests(first, a.boot, rng)
+    pd.DataFrame([{**(h1 or {}), **conf}]).to_csv(os.path.join(o, f"{a.wiki}_confirmatory.csv"), index=False)
+    if len(neg):
+        neg.to_csv(os.path.join(o, f"{a.wiki}_negative_control.csv"), index=False)
+    h1_lines = []
+    if h1:
+        h1_lines = [f"- H1 창 간 차이(replace, D3 앵커 n={h1['n']:,}): Δ(24h) = {h1['delta24_pp']:.2f}pp, Δ(∞) = {h1['deltainf_pp']:.2f}pp, "
+                    f"D = {h1['D_pp']:.2f}pp [단측 95% 하한 {h1['D_ci90_lo']:.2f}; 양측 95% {h1['D_ci95_lo']:.2f}, {h1['D_ci95_hi']:.2f}], "
+                    f"R = Δ(∞)/Δ(24h) = {h1['R']:.3f} [{h1['R_ci_lo']:.3f}, {h1['R_ci_hi']:.3f}] → "
+                    + ("H1 지지" if h1['D_ci90_lo'] > 0 else "H1 미지지") + (", R ≥ 0.75(대부분 잔존)" if h1['R'] >= 0.75 else ", R < 0.75")]
 
     # go/no-go 판정 (02_plan/timeline_and_gonogo.md 기준)
     g = grid[grid["variant"].isin(["strict", "replace"])].set_index(["F", "W"])
@@ -156,6 +238,16 @@ def main():
         + ("" if has_replace else " (replace 변형 없음: 06_recompute_reverts_d3.py 실행 후 재판정 권장)"), "",
         f"- |Δp| F0−F2 W24h = {d24:.2f}pp, W7d = {d7:.2f}pp, W∞ CI = [{dinf_lo:.2f}, {dinf_hi:.2f}]pp",
         f"- success rate Spearman(F0 vs F2, W24h) = {rho24:.3f}, 하위 10% 이동 = {moved24:.1%}",
+        *h1_lines,
+        (f"- H2 대체율 S(D3 표본 n={conf['h2_n']:,}): Δ strict {conf['h2_delta_strict_pp']:.2f}pp, Δ replace {conf['h2_delta_replace_pp']:.2f}pp, "
+         f"S = {conf['h2_S']:.3f} [단측 95% 상한 {conf['h2_S_ci95_hi_onesided']:.3f}; 양측 {conf['h2_S_ci_lo']:.3f}, {conf['h2_S_ci_hi']:.3f}] → "
+         + ("H2 지지(S < 0.25)" if conf['h2_S_ci95_hi_onesided'] < 0.25 else "H2 미지지")) if "h2_S" in conf else "- H2: D3 표본 없음",
+        (f"- H3 정의 일치(앵커 2020-08+, n={conf['h3_n']:,}): D2 vs D3r15 {conf['h3_agree_d2_d3r15']:.4f}, D1 vs D2 {conf['h3_agree_d1_d2']:.4f}; "
+         f"D1만 되돌림 {conf['h3_n_d1only']:,}건 중 반경 15 밖 {conf['h3_d1only_beyond_radius']:.3f} → "
+         + ("H3 지지" if (conf['h3_agree_d2_d3r15'] >= 0.95 and conf['h3_d1only_beyond_radius'] > 0.5) else "H3 미지지")) if "h3_n" in conf else "- H3: 해당 앵커 없음",
+        f"- H4 OR 최대/최소 비(strict 9셀): {conf['h4_or_ratio']:.3f} [{conf['h4_or_ratio_ci_lo']:.3f}, {conf['h4_or_ratio_ci_hi']:.3f}] (boot {conf['h4_boot']}) → "
+        + ("H4 지지" if (conf['h4_or_ratio'] >= 1.5 and conf['h4_or_ratio_ci_lo'] > 1.0) else "H4 미지지"),
+        (f"- 음성 대조(봇 점유율 < 1% 연도 셀 {len(neg)}개): ±0.5pp 안 {int(neg['within_0p5'].sum())}개" if len(neg) else "- 음성 대조: 봇 점유율 < 1% 셀 없음"),
         f"- 되돌린 쪽 join 실패 = {int(first['reverter_join_failed'].sum()):,} / 되돌림 {int(first['is_reverted_d1'].sum()):,}",
         (f"- D3 계산 앵커 {int(first['anchor_on_allrevs'].sum()):,} / {len(first):,}; D1≠D3 불일치 비율 = "
          f"{first.loc[first['anchor_on_allrevs'], 'd1_d3_mismatch'].mean():.5f} "

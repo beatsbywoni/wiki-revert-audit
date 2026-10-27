@@ -76,3 +76,33 @@
 - **go/no-go: GO(H1 수정)**. 상세 `04_output/gonogo_report.md`. 핵심: F2r Δ 9.86/9.43/7.69pp(24h/7d/∞), Spearman .764, 하위 10% 이동 55%, OR 0.31~0.92(연도별로 부호 반전), D2≈D3r15(98.8%), D1 vs D2 96.7%.
 - 결정 대기(사용자): 보고서 §7의 7개 제안(H1 재서술, 정의 축 3개, 도구 태그 위키별, 확대 위키 enwiki+frwiki+dewiki/jawiki, 음성 대조 정의, 2023~24 급증 탐색, 등록 시점 명시).
 - 다음 할 일: 사용자 확정 → research_design·prereg·codebook 갱신 → git init·첫 커밋(사용자) → 확대 위키 V3·V2 진단 → prereg 확정·Zenodo.
+
+## 2026-10-26 (맥 Cowork 3회차, 23:20 밤샘 배치 시작)
+- 사용자 확정: gonogo_report §7 제안 7개 전부 채택. git init·첫 커밋 9f5b190(로컬). GitHub push·Zenodo는 추후.
+- 앵커 정의 확정: 편집자의 첫 편집(`event_timestamp == event_user_first_edit_timestamp`)이 ns0인 경우. 부분 기간 덤프(enwiki 2018-01~2026-09)에서도 성립. kowiki 테스트 추출에서 첫 편집이 ns0인 편집자 91%.
+- 파이프라인 개정(enwiki 규모 대응): 02 압축형 3테이블(edits = 첫 편집 뒤 91일, all_revs = sha1 64비트 해시·bool), 03 되돌린 쪽 pyarrow 필터 읽기·D3 표본 6만(연도 층화)·`d3_sample`, 06 표본·`anchor_on_allrevs`(직전 revision 범위 안), 04 변형별 격자(strict / strict_d3sample / replace / radius15), 07 신규 편집자 모집단 주의. 합성 자료와 kowiki 2002~2009 실자료로 체인 검증.
+- 밤샘 드라이버 `03_pipeline/run_overnight.sh`: kowiki(재실행) → enwiki(2018-01~2026-09, 105파일) → frwiki → dewiki → jawiki. 단계별 `.done` 표식, 디스크 40GB 미만 시 건너뜀. 로그 04_logs/overnight_*.log.
+- 설계 문서 갱신: research_design v0.2, prereg_draft v0.2(H1 재서술 = 창 간 차이 Δ(24h)−Δ(∞) 등가 검정, H3 = D2≈D3r15, 음성 대조 = 점유율 <1% 셀, 정의 축 D1/D3r15/D2), codebook v0.2.
+- 다음 할 일(아침): 로그 확인 → 위키별 04_output 검토 → 위키 간 비교표(용량-반응: 봇·도구 점유율 vs Δ) → prereg 확정·커밋 해시 고정·Zenodo 기탁(사용자 승인) → 확증 분석 스크립트(혼합모형·용량-반응 그림·OR 범위).
+
+## 2026-10-27 07:50 (밤샘 배치 중간 점검)
+- 완료: kowiki(23:22~23:31, 새 앵커 정의 n=47,633, 결과는 구 정의와 거의 동일), enwiki(23:31~06:23; 다운로드 105파일 55GB 4h08m, 02 2h, 04 41m; 앵커 2,189,284, D3 표본 59,680). 진행 중: frwiki 다운로드(17GB, 2022 파일). 디스크 여유 59GB.
+- enwiki 핵심: p(24h) 37.0%, 봇 점유 12%(중앙값 8초), 도구 점유 56%; Δ 봇 제외 strict 4.5 / replace 3.0→2.3pp, Δ 봇·도구 제외 strict 21.1 / replace 18.8→17.4pp; Spearman .749, 하위 10% 이동 55%; OR 0.43~0.77. 비교표 04_output/cross_wiki_summary.md.
+- 설계 쟁점(사용자 결정 필요): enwiki 결과를 등록 전에 보았으므로 확증 위키를 frwiki·dewiki·jawiki로 둘지, 전체를 서술적 감사로 할지.
+
+## 2026-10-27 14:20 (배치 점검)
+- 사용자가 07:50경 배치 중단, 10:47 재시작(이어받기 정상). frwiki 완료(다운로드 21GB, 02 46분; 앵커 346,938, D3 표본 59,985, D1≠D3 0건). dewiki 다운로드 중(13GB, 속도 1.8MB/s로 저하). 디스크 여유 40GB → jawiki는 40GB 기준에 걸려 건너뛸 가능성.
+- frwiki 핵심: p(24h) 24.3%, 봇 점유 4.2%(Salebot, 중앙값 3초), 도구 점유 25.5%; Δ 봇 제외 strict 1.0 / replace 0.63→0.49pp; Δ 봇·도구 제외 strict 7.2 / replace 6.36→6.17→5.45pp; Spearman .926, 하위 10% 이동 25%; OR 0.47~0.72.
+- 위키 간 용량-반응 확인(도구 점유율 .26/.52/.56 → Δ 6.4/9.8/18.8pp). H1 '+1pp' 절대 기준은 frwiki 미달(0.9pp) → 등록 전 기준 형식 결정 필요(방향성 vs 상대 비율). 비교표 04_output/cross_wiki_summary.md 갱신.
+
+## 2026-10-27 20:00 (밤샘 배치 종료 점검)
+- 배치 종료 16:48. dewiki 완료(다운로드 25GB 3h46m, 02 55분; 앵커 236,903, D3 표본 59,995, D1≠D3 1건). jawiki는 디스크 여유 27GB로 건너뜀(ALL DONE). 디스크 여유 30GB, 원자료 01_raw 합계 약 104GB(enwiki 55, dewiki 25, frwiki 21, kowiki 3).
+- dewiki 핵심: p(24h) 25.6%, 봇 점유 0.1%(반달 대응 봇 없음, 봇 축 음성 대조), 도구 점유 41%(롤백만); Δ 봇·도구 제외 strict 10.5 / replace 9.59→9.48→8.79pp; Spearman .895, 하위 10% 이동 31%; OR 0.52~0.84.
+- 4개 위키 비교표 갱신(04_output/cross_wiki_summary.md). 상대 Δ(Δ/p)가 도구 점유율과 단조(.56/.52/.41/.26 → .51/.45/.38/.26).
+- 결정 대기: (1) H1 기준 형식(방향성 CI vs 비율 < 0.95), (2) 확증 위키(미열람: jawiki·plwiki·itwiki 후보; enwiki 원자료 삭제 후 실행), (3) 원자료 보관 범위.
+
+## 2026-10-27 20:30 (사용자 결정 반영)
+- 원자료 삭제(사용자 요청): 01_raw/enwiki·frwiki·dewiki 덤프 삭제(약 101GB), 다운로드 로그·버전·인덱스는 01_raw/_meta/<wiki>/ 보존, kowiki 원자료(3.2GB) 유지. 디스크 여유 32 → 105GB. 파생 parquet(02_derived 22GB)과 결과는 유지.
+- H1 확정(사용자: 타깃 저널 고려해 추천안 채택): replace 변형 Δ(W24h) − Δ(W∞) > 0 단측 부트스트랩 검정 + 효과 크기 R = Δ(W∞)/Δ(W24h)(R ≥ 0.75 = "대부분 잔존"). prereg_draft·research_design 갱신, 04_audit_grid.py에 h1_window_test 추가(<wiki>_h1_window.csv). kowiki: D = 2.21pp [단측 95% 하한 2.05], R = 0.775 [0.759, 0.792].
+- 확증 위키(등록 전 미열람): jawiki·plwiki·itwiki로 prereg에 기재. 드라이버가 인자로 위키 목록을 받도록 개정.
+- 다음: 맥에서 4개 탐색 위키 04 재실행(H1 수치 산출) → 확증 위키 배치 → prereg 확정·커밋·Zenodo.

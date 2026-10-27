@@ -30,10 +30,15 @@ run_wiki () {  # run_wiki <wiki> [download range args...]
   echo "=================== $wiki done $(date '+%F %T')  free $(free_gb)GB"
 }
 
-# 순서: kowiki(새 앵커 정의로 재실행, 10분) → enwiki(2018-01~2026-09 월별, 가장 큼) → frwiki(Salebot) → dewiki → jawiki
-run_wiki kowiki
-run_wiki enwiki 2018-01 2026-09
-run_wiki frwiki
-run_wiki dewiki
-run_wiki jawiki
+# 인자로 위키를 주면 그 위키들만(연도별·all-time 위키는 범위 인자 없이), 없으면 기본 순서.
+#   예) 확증 위키: caffeinate -i bash 03_pipeline/run_overnight.sh jawiki plwiki itwiki
+if [[ $# -gt 0 ]]; then
+  for w in "$@"; do run_wiki "$w"; done
+else
+  run_wiki kowiki
+  run_wiki enwiki 2018-01 2026-09
+  run_wiki frwiki
+  run_wiki dewiki
+  run_wiki jawiki
+fi
 echo "ALL DONE $(date '+%F %T')"; ls -la 04_output | head -40; df -h .
