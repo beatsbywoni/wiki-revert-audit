@@ -1,7 +1,7 @@
 # Preregistration: Which reverts count? Successor filtering and observation windows in Wikipedia revert-based metrics
 
 Author: Hongwon Jeong (Center for Creative Convergence Education, Hanyang University ERICA). ORCID 0009-0003-7908-7478.
-Version: 1.0 draft for registration (2026-10-27). Registered commit hash: [to be inserted]. Zenodo DOI: [to be inserted]. Registration date: [ ].
+Version: 1.0, registered 2026-10-28. Content commit (this text): [to be inserted after commit]. Zenodo DOI: [to be inserted after deposit]. Confirmatory wikis (jawiki, plwiki, itwiki) were processed by the pipeline before this registration but none of their output files has been opened; they remain untracked and are excluded from the deposited snapshot.
 
 ## 1. Study type and registration status
 
