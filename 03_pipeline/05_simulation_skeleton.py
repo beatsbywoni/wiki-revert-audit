@@ -1,4 +1,4 @@
-"""시뮬레이션 골격: 봇 속도·점유율·사람 되돌림 지연·기저 되돌림 확률 격자에서 3×3 감사 격자를 생성한다.
+"""시뮬레이션(2026-10-28 실행판): 봇 속도·점유율·사람 되돌림 지연·기저 되돌림 확률 격자에서 3×3 감사 격자를 생성한다.
 
 목적: 관측된 kowiki/enwiki 격자가 어떤 파라미터 영역에 놓이는지 보이고, "창이 있는 지표만 민감" 패턴이
 어떤 조건에서 깨지는지(예: 사람 되돌림 지연이 창보다 길 때) 미리 지도화한다. 22번의 500회 격자 방식.
@@ -51,7 +51,7 @@ def main():
         bot_share=[0.0, 0.2, 0.5, 0.8],
         bot_speed_s=[5, 60],
         human_delay_median_s=[600, 3600, 86400, 604800],
-        p_human_follow_after_bot=[0.0, 0.5],
+        p_human_follow_after_bot=[0.0, 0.1, 0.2, 0.5],
     )
     rows = []
     for combo in itertools.product(*grid.values()):
@@ -66,6 +66,13 @@ def main():
     piv = res.pivot_table(index=list(grid.keys()) + ["W"], columns="F", values="p_mean").reset_index()
     piv["delta_F0_F1s_pp"] = (piv["F0"] - piv["F1s"]) * 100
     piv["delta_F0_F1r_pp"] = (piv["F0"] - piv["F1r"]) * 100
+    piv["S"] = 1 - piv["delta_F0_F1r_pp"] / piv["delta_F0_F1s_pp"].where(piv["delta_F0_F1s_pp"] > 0)
+    keys = list(grid.keys())
+    r24 = piv[piv.W == "W24h"].set_index(keys)["delta_F0_F1r_pp"]
+    rinf = piv[piv.W == "Winf"].set_index(keys)["delta_F0_F1r_pp"]
+    ratio = (rinf / r24.where(r24 > 0)).rename("R_inf_over_24h").reset_index()
+    ratio.to_csv(os.path.join(ROOT, "04_output", "simulation_window_ratio.csv"), index=False)
+    print(ratio.groupby(["p_human_follow_after_bot", "human_delay_median_s"])["R_inf_over_24h"].mean().round(3).unstack())
     os.makedirs(os.path.join(ROOT, "04_output"), exist_ok=True)
     out = os.path.join(ROOT, "04_output", "simulation_grid.csv")
     piv.to_csv(out, index=False)

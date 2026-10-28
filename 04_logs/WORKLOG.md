@@ -120,3 +120,14 @@
 - 등록 후 탐색 #1(H3 기제): 미태그-반경 안 사례에서 익명·수동 되돌림 비중 높음(itwiki 익명 .20 vs 태그 사례 .01). 가설: mw-reverted 는 되돌린 편집의 patrol 승인 뒤 붙는 지연 갱신이라 비자동승인 되돌림은 누락. MediaWiki 소스 확인 필요(원고에서 '검증 완료' 전까지 가설로만 서술).
 - 결과 서술 방침: 기각된 H3·plwiki H4 는 그대로 보고(16번 AMPPS 서술 방식). H3 기각은 '태그 정의는 되돌린 사람의 신뢰 등급에 의존한다'는 추가 발견으로 전환.
 - 다음: (1) MediaWiki RevertedTagUpdate 소스 확인, (2) 혼합모형·용량-반응 그림·시뮬레이션(05) 실행, (3) 원고 초안(서론·방법·결과) 착수, (4) 심사용 Zenodo 공유 링크(사용자 생성), (5) GitHub push(사용자 승인).
+
+## 2026-10-28 14:20 (등록 후 탐색 #1 확인: mw-reverted 태그의 승인 게이트)
+- 출처: MediaWiki Manual:Reverts (https://www.mediawiki.org/wiki/Manual:Reverts): 태그는 revertedTagUpdate 잡으로 적용되며 조건은 (a) undo·rollback·manual revert 로 인식, (b) 되돌려진 편집 수 ≤ $wgRevertedTagMaxDepth(기본 15), (c) 되돌린 편집이 삭제·재되돌림 아님, (d) **자동 승인**: $wgUseRCPatrol 이면 autopatrol 권한자만 즉시, 나머지는 patrol 될 때 재예약, "Reverts that are not patrolled will not be marked with the reverted tag". FlaggedRevs 위키는 autoreview 기준. 소스: includes/Storage/RevertedTagUpdateManager.php(approveRevertedTagForRevision, patrol/autopatrol 시 호출), RevertedTagUpdate.php(shouldExecute), MainConfigSchema.php(ManualRevertSearchRadius=15, RevertedTagMaxDepth=15).
+- Wikimedia 설정(operations/mediawiki-config InitialiseSettings.php, dblists/flaggedrevs.dblist): wgUseRCPatrol=true 인 위키 중 본 연구 대상은 frwiki·itwiki; FlaggedRevs 는 dewiki·enwiki·plwiki; kowiki·jawiki 는 둘 다 아님.
+- 자료 대조(04_output/h3_tag_coverage.csv, 앵커 2020-08+, 반경 15 안 identity revert 중 태그 누락률): kowiki .024, enwiki .028, jawiki .042, dewiki .046, plwiki .058, frwiki .088, itwiki .120. patrol 위키 2개가 최상위, FlaggedRevs 위키가 중간. 누락 사례의 99% 이상이 되돌린 편집에 undo/rollback/manual-revert 태그를 가짐(탐지는 됨). 익명 되돌림 비중 itwiki .20, frwiki .17.
+- 해석(원고용): D2(태그) 정의는 '되돌린 사람의 승인 상태'에 의존하는 정의다. 정의 축의 세 번째 정의가 위키 설정에 따라 2~12% 과소집계됨을 보고하고, H3 둘째 조항(반경이 주원인)은 kowiki 특수성이었음을 기술.
+
+## 2026-10-28 14:45 (그림·시뮬레이션)
+- 08_figures.py 신설, 04_output/fig1~fig4(png·pdf)와 fig_data_*.csv: fig1 창별 Δ strict/replace(7위키), fig2 용량-반응(위키 7 + 위키×연도 셀 56, 셀 Spearman ρ = 0.981; 점들이 '상대 Δ = 점유율' 선 바로 아래 = 대체율 S 만큼 낮음), fig3 9셀 OR, fig4 태그 누락률(patrol/FlaggedRevs 색).
+- 05 시뮬레이션 실행(n=20,000, reps 20, 격자 p_revert×bot_share×bot_speed×human_delay×follow_prob): R = Δ(∞)/Δ(24h)는 사람 재되돌림 확률(follow) 0.1~0.2, 지연 중앙값 1일~1주에서 .81~.95 → 관측 R(.78~.92)·S(.09~.15)와 부합. follow 0이면 R=1(창 효과 없음), follow 0.5·지연 1주면 R=.51. 04_output/simulation_grid.csv, simulation_window_ratio.csv.
+- 해석: 창 효과의 크기는 '봇·도구가 먼저 되돌린 편집을 사람이 다시 되돌리는 확률과 그 지연'으로 결정된다. 관측된 S≈0.1이 작으므로 R이 1에 가깝다.
