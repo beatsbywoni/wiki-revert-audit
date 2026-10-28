@@ -113,3 +113,10 @@
 - Zenodo 기탁(Claude in Chrome, 사용자 확인 후 Publish): 기록 23720117, DOI 10.5281/zenodo.23720117, concept DOI 10.5281/zenodo.23720116. 유형 Publication/Other(Preregistration 유형 없음), 메타데이터 공개·파일 제한, CC BY 4.0, 키워드 preregistration/Wikipedia reverts/measurement audit. 심사용 공유 링크는 사용자가 직접 생성(자동화 권한 차단).
 - 익명 심사 대응: 원고에는 DOI 대신 "deposited on Zenodo, DOI withheld for anonymous review, share link available to the editor" 문구, 게재 후 파일 공개 전환(6번 CER 관행).
 - 다음: DOI 기입 커밋 → 확증 결과 열람(jawiki·plwiki·itwiki gonogo_report의 H1~H4 판정) → cross_wiki_summary 7개 위키 갱신 → DEVIATION_LOG 운영 시작.
+
+## 2026-10-28 14:00 (확증 결과 열람, DOI 커밋 278b832 이후)
+- 편차 점검: 등록 스냅샷(7fcff3d)의 03_pipeline 과 실행 코드 동일(git diff 없음, 04에 confirmatory_tests 포함). 편차 없음.
+- 확증 판정: H1 3/3 지지(D 0.24/0.77/2.49pp, R .92/.88/.84), H2 3/3 지지(S .145/.111/.114), H3 0/3(둘째 조항 기각: 미태그 사례의 반경 밖 비율 .42/.09/.07), H4 2/3(plwiki 1.43 미달), 음성 대조 3/3(8/8 셀). 상세 04_output/cross_wiki_summary.md, 표 cross_wiki_table.csv.
+- 등록 후 탐색 #1(H3 기제): 미태그-반경 안 사례에서 익명·수동 되돌림 비중 높음(itwiki 익명 .20 vs 태그 사례 .01). 가설: mw-reverted 는 되돌린 편집의 patrol 승인 뒤 붙는 지연 갱신이라 비자동승인 되돌림은 누락. MediaWiki 소스 확인 필요(원고에서 '검증 완료' 전까지 가설로만 서술).
+- 결과 서술 방침: 기각된 H3·plwiki H4 는 그대로 보고(16번 AMPPS 서술 방식). H3 기각은 '태그 정의는 되돌린 사람의 신뢰 등급에 의존한다'는 추가 발견으로 전환.
+- 다음: (1) MediaWiki RevertedTagUpdate 소스 확인, (2) 혼합모형·용량-반응 그림·시뮬레이션(05) 실행, (3) 원고 초안(서론·방법·결과) 착수, (4) 심사용 Zenodo 공유 링크(사용자 생성), (5) GitHub push(사용자 승인).
