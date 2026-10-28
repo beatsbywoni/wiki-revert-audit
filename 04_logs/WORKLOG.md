@@ -131,3 +131,13 @@
 - 08_figures.py 신설, 04_output/fig1~fig4(png·pdf)와 fig_data_*.csv: fig1 창별 Δ strict/replace(7위키), fig2 용량-반응(위키 7 + 위키×연도 셀 56, 셀 Spearman ρ = 0.981; 점들이 '상대 Δ = 점유율' 선 바로 아래 = 대체율 S 만큼 낮음), fig3 9셀 OR, fig4 태그 누락률(patrol/FlaggedRevs 색).
 - 05 시뮬레이션 실행(n=20,000, reps 20, 격자 p_revert×bot_share×bot_speed×human_delay×follow_prob): R = Δ(∞)/Δ(24h)는 사람 재되돌림 확률(follow) 0.1~0.2, 지연 중앙값 1일~1주에서 .81~.95 → 관측 R(.78~.92)·S(.09~.15)와 부합. follow 0이면 R=1(창 효과 없음), follow 0.5·지연 1주면 R=.51. 04_output/simulation_grid.csv, simulation_window_ratio.csv.
 - 해석: 창 효과의 크기는 '봇·도구가 먼저 되돌린 편집을 사람이 다시 되돌리는 확률과 그 지연'으로 결정된다. 관측된 S≈0.1이 작으므로 R이 1에 가깝다.
+
+## 2026-10-28 15:10 (V7·V5 저널 확인)
+- JASIST 규정 확인(journal_plan.md에 상세): 7,000단어, 초록 200단어, APA, 미주, single-blind, ScholarOne, 커버레터 필수(정보과학 연결 + 생성형 AI 선언), DAS 필수. Research Exchange 가 아니라 ScholarOne(A 문서 수정 필요).
+- single-blind 이므로 Zenodo 파일 제한의 익명성 근거는 사라짐 → 파일을 공개로 전환해도 됨(사용자 결정). 원고에는 DOI 직접 인용.
+- JASIST 내 연결 문헌 11편 목록화(OpenAlex, 2008~2026). 서론은 'information quality 측정'과 '봇·인간 협업' 담론에 연결.
+
+## 2026-10-28 15:40 (원고 초안 v0.1)
+- 05_manuscript/draft_v0.1.md: 초록 200단어, 본문 약 4,800단어(표 1 포함; 한도 7,000), 엠대시 0, we 0. 서론·배경(JASIST 연결: Stvilia 2008, Arazy 2013, Illari & Floridi 2013, Lewoniewski 2017, Wang & Li 2019, JASIST 2020·2026)·방법·결과(H1~H4, 음성 대조, 태그 게이트)·논의(체크리스트 6항목)·한계·DAS·참고문헌.
+- [TBD] 11곳: 확증 위키의 첫 편집 ns0 비율, kowiki 연도별 OR 부호 반전 표 인용, 시뮬레이션 표 인용, 강건성 문단(K=5·전체 계정·historical 봇·undo 도구·5초·창 경계·구 앵커 정의·leave-one-out 미집계), GitHub URL·릴리스 DOI, 미주 2개. [verify] 11곳: 참고문헌 DOI·저자·쪽수.
+- 다음: 강건성 집계 스크립트(09_robustness.py) → v0.2; 참고문헌 DOI 대조; 커버레터 초안; docx 변환(JASIST Word 1파일 + Figure1~4 개별).
