@@ -1,7 +1,7 @@
 # Preregistration: Which reverts count? Successor filtering and observation windows in Wikipedia revert-based metrics
 
 Author: Hongwon Jeong (Center for Creative Convergence Education, Hanyang University ERICA). ORCID 0009-0003-7908-7478.
-Version: 1.0, registered 2026-10-28. Content commit (this text): 7fcff3d0f2ec27c7d768f80c21f73c5914558f1a. Zenodo DOI: [to be inserted after deposit]. Confirmatory wikis (jawiki, plwiki, itwiki) were processed by the pipeline before this registration but none of their output files has been opened; they remain untracked and are excluded from the deposited snapshot.
+Version: 1.0, registered 2026-10-28. Content commit (this text): 7fcff3d0f2ec27c7d768f80c21f73c5914558f1a. Zenodo DOI: 10.5281/zenodo.23720117 (concept DOI 10.5281/zenodo.23720116; deposited 2026-10-28, metadata public, files restricted during peer review). Confirmatory wikis (jawiki, plwiki, itwiki) were processed by the pipeline before this registration but none of their output files has been opened; they remain untracked and are excluded from the deposited snapshot.
 
 ## 1. Study type and registration status
 

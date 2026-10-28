@@ -41,6 +41,6 @@ Which reverts count? Successor filtering and observation windows in Wikipedia re
 코드·집계·시뮬레이션·편차 로그를 GitHub 저장소와 Zenodo DOI로 공개. 편집자 수준 파생 자료는 난수 ID.
 
 ## 등록 메타
-- 커밋 해시: [확정 시 기입]
-- Zenodo DOI: [기탁 후 기입]
-- 등록일: [ ]
+- 커밋 해시: 7fcff3d0f2ec27c7d768f80c21f73c5914558f1a (내용 커밋), 98226ea (해시 기입 커밋)
+- Zenodo DOI: 10.5281/zenodo.23720117 (concept 10.5281/zenodo.23720116), 파일 제한 공개, 기록 공개
+- 등록일: 2026-10-28

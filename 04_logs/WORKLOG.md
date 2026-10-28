@@ -106,3 +106,10 @@
 - H1 확정(사용자: 타깃 저널 고려해 추천안 채택): replace 변형 Δ(W24h) − Δ(W∞) > 0 단측 부트스트랩 검정 + 효과 크기 R = Δ(W∞)/Δ(W24h)(R ≥ 0.75 = "대부분 잔존"). prereg_draft·research_design 갱신, 04_audit_grid.py에 h1_window_test 추가(<wiki>_h1_window.csv). kowiki: D = 2.21pp [단측 95% 하한 2.05], R = 0.775 [0.759, 0.792].
 - 확증 위키(등록 전 미열람): jawiki·plwiki·itwiki로 prereg에 기재. 드라이버가 인자로 위키 목록을 받도록 개정.
 - 다음: 맥에서 4개 탐색 위키 04 재실행(H1 수치 산출) → 확증 위키 배치 → prereg 확정·커밋·Zenodo.
+
+## 2026-10-28 13:40~13:55 (사전등록 완료)
+- 확증 배치(jawiki·plwiki·itwiki) 2026-10-27 20:57~2026-10-28 00:05 완료, 오류 없음. 결과 파일은 등록 전 미열람(터미널 로그도 상태 줄만 grep).
+- 등록 커밋: 내용 커밋 7fcff3d0f2ec27c7d768f80c21f73c5914558f1a("preregistration v1.0 (content commit)"), 해시 기입 커밋 98226ea. 스냅샷 `git archive HEAD` → _release/wiki-revert-audit_preregistration_7fcff3d0f2ec.zip(821KB, 확증 결과 0개 포함 확인). 등록문 PDF(pandoc+wkhtmltopdf, 3쪽).
+- Zenodo 기탁(Claude in Chrome, 사용자 확인 후 Publish): 기록 23720117, DOI 10.5281/zenodo.23720117, concept DOI 10.5281/zenodo.23720116. 유형 Publication/Other(Preregistration 유형 없음), 메타데이터 공개·파일 제한, CC BY 4.0, 키워드 preregistration/Wikipedia reverts/measurement audit. 심사용 공유 링크는 사용자가 직접 생성(자동화 권한 차단).
+- 익명 심사 대응: 원고에는 DOI 대신 "deposited on Zenodo, DOI withheld for anonymous review, share link available to the editor" 문구, 게재 후 파일 공개 전환(6번 CER 관행).
+- 다음: DOI 기입 커밋 → 확증 결과 열람(jawiki·plwiki·itwiki gonogo_report의 H1~H4 판정) → cross_wiki_summary 7개 위키 갱신 → DEVIATION_LOG 운영 시작.
