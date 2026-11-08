@@ -2,7 +2,7 @@
 
 Which reverts count? Successor filtering and observation windows in Wikipedia revert-based metrics.
 
-Sole-author measurement audit (Hongwon Jeong, Hanyang University ERICA). Fixed-anchor design: the same newcomer edits are held constant while the set of revisions that count as a revert (all / excluding bots / excluding bots and tools) and the observation window (24 h / 7 d / final state) are varied. Data: Wikimedia `mediawiki_history` monthly dumps. Code and aggregates are released on GitHub and archived on Zenodo; no OSF.
+Sole-author measurement audit (Hongwon Jeong, Hanyang University ERICA). Fixed-anchor design: the same newcomer edits are held constant while the set of revisions that count as a revert (all / excluding bots / excluding bots and tools) and the observation window (24 h / 7 d / final state) are varied. Data: Wikimedia `mediawiki_history` monthly dumps. Code and aggregates are released on GitHub and archived on Zenodo (release v1.0.0: https://doi.org/10.5281/zenodo.24054642; all versions: https://doi.org/10.5281/zenodo.24054641; preregistration: https://doi.org/10.5281/zenodo.23720117); no OSF.
 
 Pipeline: `03_pipeline/README.md`. Design and preregistration draft: `02_plan/`. Korean working documents: `00_START_HERE.md`, `01_context/`.
 

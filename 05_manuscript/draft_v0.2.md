@@ -1,6 +1,6 @@
 # Which reverts count? Successor filtering and observation windows in Wikipedia revert-based metrics
 
-<!-- Draft v0.2, 2026-11-08. JASIST Research Article. Numbers transcribed from 04_output/*.csv (cross_wiki_table, <wiki>_grid, <wiki>_confirmatory, h3_tag_coverage, robust_*). No number is typed from memory. Items in [brackets] are editorial placeholders to be resolved before submission. -->
+<!-- Draft v0.2, 2026-11-08. JASIST Research Article. Numbers transcribed from 04_output/*.csv (cross_wiki_table, <wiki>_grid, <wiki>_confirmatory, h3_tag_coverage, robust_*). No number is typed from memory. Remaining [brackets], if any, are editorial placeholders. -->
 
 ## Abstract
 
@@ -16,7 +16,7 @@ Information science has long insisted that quality is not observed but operation
 
 Yet "reverted" is not a property of an edit. It is a property of an edit together with two decisions the analyst makes about later events. The first is who may count as a reverter. Wikipedia's quality control is partly automated: anti-vandalism bots such as ClueBot NG on the English edition revert within seconds, and semi-automated tools such as rollback, Huggle and Twinkle let trusted editors revert with one click (Geiger & Halfaker, 2013). Published practice varies. Some studies count every revert regardless of who made it (Formisano et al., 2026); others separate reverts by bots and tools from manual ones and model them as distinct exposures (Halfaker et al., 2013; TeBlunthuis et al., 2018); the Wikimedia metric definition is silent on the question (Wikimedia Research, n.d.). The second decision is how long to watch. The Wikimedia Growth team counts an edit as reverted only within 48 hours, on the ground that almost all reverts happen by then (Warncke-Wang et al., 2023), whereas the history dumps flag a revert whenever it happens. These two decisions interact with a third, less visible one: the operational definition of a revert itself. The dumps flag "identity reverts" detected by content hashing over a page's entire history; the mwreverts library used in much published work searches only the last 15 revisions (Halfaker, n.d.); and since 2020 MediaWiki tags reverted revisions itself, but only under conditions that, as shown below, depend on who performed the revert.
 
-The problem is an instance of what a companion study calls successor selection (Author, under review). An event-based metric asks whether a later event of some kind followed an earlier one. Holding the earlier events fixed, the metric can be moved by changing only which later events are allowed to count. That study showed, for software repository mining, that excluding one class of successor events moved an outcome metric by several percentage points with no change in the underlying behavior. Wikipedia reverts are a natural second case: the successor filter and the window are both routinely varied across studies, and the dumps allow the audit to be run at scale with the anchors held constant.
+The problem is an instance of what a companion study calls successor selection (Jeong, under review). An event-based metric asks whether a later event of some kind followed an earlier one. Holding the earlier events fixed, the metric can be moved by changing only which later events are allowed to count. That study showed, for software repository mining, that excluding one class of successor events moved an outcome metric by several percentage points with no change in the underlying behavior. Wikipedia reverts are a natural second case: the successor filter and the window are both routinely varied across studies, and the dumps allow the audit to be run at scale with the anchors held constant.
 
 I therefore ask a measurement question rather than a behavioral one. Given the same newcomers and the same first edits, how far do the cohort revert rate, the editor-level success rate and the downstream revert-to-retention estimate move when the successor filter and the observation window change? Where does the sensitivity come from, and how much of it survives an unbounded window? Do the three revert definitions agree, and when they disagree, why? The audit is only possible with a revert definition computed over complete page histories, which the dumps provide and radius-limited libraries cannot, and a seven-edition comparison of this kind has not been reported. Four editions were analyzed before registration; the design, hypotheses and code were then registered on Zenodo (DOI 10.5281/zenodo.23720117), and three further editions were opened only after registration.
 
@@ -85,7 +85,7 @@ Four hypotheses were registered before the confirmatory editions were opened and
 
 ### Transparency
 
-Code, cell-level aggregates with at least 50 anchors, robustness tables, simulation outputs, figure data, the deviation log and the AI-assistance log are released on GitHub (https://github.com/beatsbywoni/wiki-revert-audit) and archived on Zenodo [release DOI at submission]. Editor-level derived data carry random identifiers; usernames of reverting accounts are not released. The study analyzes public edit histories and was not submitted for ethics review. Generative AI (Claude, Anthropic) was used to draft analysis code, documents and prose under the author's direction. All computations were performed by the released deterministic code on the unmodified dumps; the AI did not analyze or alter data; every claim about the dump format and the MediaWiki software was checked against the primary source; all figures in the text were transcribed from the output files; and the author reviewed and takes responsibility for the whole manuscript.
+Code, cell-level aggregates with at least 50 anchors, robustness tables, simulation outputs, figure data, the deviation log and the AI-assistance log are released on GitHub (https://github.com/beatsbywoni/wiki-revert-audit) and archived on Zenodo (release v1.0.0, https://doi.org/10.5281/zenodo.24054642; Jeong, 2026). Editor-level derived data carry random identifiers; usernames of reverting accounts are not released. The study analyzes public edit histories and was not submitted for ethics review. Generative AI (Claude, Anthropic) was used to draft analysis code, documents and prose under the author's direction. All computations were performed by the released deterministic code on the unmodified dumps; the AI did not analyze or alter data; every claim about the dump format and the MediaWiki software was checked against the primary source; all figures in the text were transcribed from the output files; and the author reviewed and takes responsibility for the whole manuscript.
 
 ## Results
 
@@ -115,13 +115,13 @@ In the strict variant Δ rose slightly with the window, because the base rate ri
 
 [Figure 1 here]
 
-**Figure 1.** Filter effect Δ = p(F0) − p(F2) by observation window, strict (left) and replace (right) variants, seven editions; solid lines are confirmatory editions. Error bars are 95 percent bootstrap intervals. In the strict variant Δ equals p(F0) times the bot-and-tool share of first reverts by construction.
+**Figure 1.** Filter effect Δ = p(F0) − p(F2) by observation window, strict (left) and replace (right) variants, seven editions; solid lines are confirmatory editions. Error bars are 95 percent bootstrap intervals. In the strict variant Δ equals p(F0) times the share of first reverts made by bots or tools by construction.
 
 ### Why: humans rarely re-revert (H2)
 
 The substitution rate S within 24 hours was .145 (one-sided 95 percent upper bound .157) in jawiki, .111 (.119) in plwiki and .114 (.119) in itwiki, supporting H2; the exploratory values were .09 to .12. Roughly nine in ten edits removed by a bot or tool were never reverted again by a person within a day, because there was nothing left to revert. Substitution grows with the window but stays a minority: at 7 days S was .12 to .21, and in the unbounded window .20 to .39, highest in kowiki (Table S1). The natural experiment of Geiger and Halfaker (2013) describes what humans do when the bot is absent; the substitution rate describes what they do when the bot has already acted.
 
-Because the strict difference equals the revert rate times the bot-and-tool share, the relative replace difference, Δ/p(F0), should track that share minus S. Figure 2 shows that it does across the seven editions and 56 edition-year cells with at least 200 sampled anchors (Spearman ρ = .99 across cells; cells are point estimates). The relation is not carried by any one edition: leaving each edition out in turn gave ρ between .988 and .991, and within single editions, across their eight years, ρ ranged from .83 to 1.00. The points lie below the identity line by the fraction S of the share, because the relative replace effect equals the share times 1 − S. A parameter-grid simulation of an excluded fast actor, a human re-revert probability and a human delay reproduced the observed R of .78 to .92 only when the re-revert probability was between .1 and .2 with delays of days to a week; with no re-reverting R is 1, and with a re-revert probability of .5 and week-long delays R falls to about .5 (Table S7). The simulated actor stands for any excluded class of reverters, bots or tools alike.
+Because the strict difference equals the revert rate times the bot-and-tool share, the relative replace difference, Δ/p(F0), should equal that share times 1 − S. Figure 2 shows that it does across the seven editions and 56 edition-year cells with at least 200 sampled anchors (Spearman ρ = .99 across cells; cells are point estimates). The relation is not carried by any one edition: leaving each edition out in turn gave ρ between .988 and .991, and within single editions, across their eight years, ρ ranged from .83 to 1.00. The points lie below the identity line by the fraction S of the share, because the relative replace effect equals the share times 1 − S. A parameter-grid simulation of an excluded fast actor, a human re-revert probability and a human delay reproduced the observed R of .78 to .92 only when the re-revert probability was between .1 and .2 with delays of days to a week; with no re-reverting R is 1, and with a re-revert probability of .5 and week-long delays R falls to about .5 (Table S7). The simulated actor stands for any excluded class of reverters, bots or tools alike.
 
 [Figure 2 here]
 
@@ -181,7 +181,7 @@ A revert is a relation between an edit and a later editor, and the metric inheri
 
 ## Data availability statement
 
-The data that support the findings of this study are openly available from the Wikimedia Foundation at https://dumps.wikimedia.org/other/mediawiki_history/ (version 2026-09). The analysis code, cell-level aggregates, robustness tables, figure data, logs and the preregistration (https://doi.org/10.5281/zenodo.23720117) are available at https://github.com/beatsbywoni/wiki-revert-audit and archived at Zenodo [release DOI]. Derived editor-level data are not released because they could be re-identified from public edit histories; the code regenerates them from the dumps.
+The data that support the findings of this study are openly available from the Wikimedia Foundation at https://dumps.wikimedia.org/other/mediawiki_history/ (version 2026-09). The analysis code, cell-level aggregates, robustness tables, figure data, logs and the preregistration (https://doi.org/10.5281/zenodo.23720117) are available at https://github.com/beatsbywoni/wiki-revert-audit and archived at Zenodo (release v1.0.0, https://doi.org/10.5281/zenodo.24054642; all versions, https://doi.org/10.5281/zenodo.24054641). Derived editor-level data are not released because they could be re-identified from public edit histories; the code regenerates them from the dumps.
 
 ## Endnotes
 
@@ -191,8 +191,6 @@ The data that support the findings of this study are openly available from the W
 ## References
 
 Arazy, O., Yeo, L., & Nov, O. (2013). Stay on the Wikipedia task: When task-related disagreements slip into personal and procedural conflicts. Journal of the American Society for Information Science and Technology, 64(8), 1634–1648. https://doi.org/10.1002/asi.22869
-
-Author. (under review). Auditing successor selection in software repository mining: Evidence from filtering AI-attributed commits. [companion manuscript; details withheld for review]
 
 Boté-Vericad, J.-J. (2026). Constructing newcomer cohorts from Wikimedia logs: Account creation type, deleted contributions, observation windows, and the behavioural threshold (Version 2). Zenodo. https://doi.org/10.5281/zenodo.23435553
 
@@ -211,6 +209,10 @@ Halfaker, A., Geiger, R. S., Morgan, J. T., & Riedl, J. (2013). The rise and dec
 Halfaker, A., Kittur, A., & Riedl, J. (2011). Don't bite the newbies: How reverts affect the quantity and quality of Wikipedia work. In Proceedings of the 7th International Symposium on Wikis and Open Collaboration (WikiSym '11) (pp. 163–172). ACM. https://doi.org/10.1145/2038558.2038585
 
 Jemielniak, D., & Wilamowski, M. (2017). Cultural diversity of quality of information on Wikipedias. Journal of the Association for Information Science and Technology, 68(10), 2460–2470. https://doi.org/10.1002/asi.23901
+
+Jeong, H. (2026). wiki-revert-audit: Code, aggregates and logs for "Which reverts count?" (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24054642
+
+Jeong, H. (under review). Auditing successor selection in software repository mining: Evidence from filtering AI-attributed commits. [companion manuscript]
 
 Kittur, A., Suh, B., Pendleton, B. A., & Chi, E. H. (2007). He says, she says: Conflict and coordination in Wikipedia. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '07) (pp. 453–462). ACM. https://doi.org/10.1145/1240624.1240698
 
