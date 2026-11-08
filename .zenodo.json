@@ -1,0 +1,20 @@
+{
+  "title": "wiki-revert-audit: code, aggregates and logs for \"Which reverts count? Successor filtering and observation windows in Wikipedia revert-based metrics\"",
+  "description": "<p>Analysis pipeline, cell-level aggregates, robustness tables, figure data, preregistration text, deviation log and AI-assistance log for a preregistered measurement audit of Wikipedia revert-based metrics. The same newcomer first edits in seven language editions are held fixed while the successor filter (all reverts / excluding bots / excluding bots and tools), the observation window and the revert definition are varied. Data: Wikimedia mediawiki_history dumps, version 2026-09. Preregistration: 10.5281/zenodo.23720117.</p>",
+  "creators": [
+    {
+      "name": "Jeong, Hongwon",
+      "affiliation": "Center for Creative Convergence Education, Hanyang University ERICA",
+      "orcid": "0009-0003-7908-7478"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": ["Wikipedia", "reverts", "information quality", "measurement validity", "bots", "peer production", "preregistration", "mediawiki_history"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23720117", "relation": "references", "resource_type": "publication-other", "scheme": "doi"},
+    {"identifier": "https://dumps.wikimedia.org/other/mediawiki_history/", "relation": "isDerivedFrom", "resource_type": "dataset", "scheme": "url"}
+  ],
+  "notes": "Editor-level derived data are not included because they could be re-identified from public edit histories; the code regenerates them from the dumps. Generative AI (Claude, Anthropic) assisted with drafting code and documents; see 04_logs/AI_ASSISTANCE_LOG.md."
+}
