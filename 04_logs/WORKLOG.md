@@ -163,3 +163,8 @@
 - 보충자료: 12_supplement.py → supplement_v0.2.md/docx/pdf(표 S1~S8, 그림 S1~S2). 편차 로그 #1~#3 기록(혼합모형→위키별 클러스터 SE 로지스틱, 등록 외 강건성 항목, H3 기제 탐색).
 - 커버레터 cover_letter_v0.2.md/docx(정보과학 연결, 방법론 혁신, 등록, AI 선언, 데이터·코드, 선호 심사자 자리). build_docx.py(pandoc+python-docx: Times 12pt 1.5, 표 폭 자동, 제목 검정) 로 manuscript_v0.2.docx/pdf(20쪽) 생성.
 - 투고 전 사용자 결정 필요: GitHub push·Zenodo 코드 릴리스(DAS 기입), Zenodo 등록 파일 공개 전환, 선호 심사자 명단, 소속·ORCID.
+
+## 2026-11-08 23:00 (봇∪도구 점유율 교정, GitHub 공개)
+- 발견: 04 의 bot_share·tool_share 는 각각 계산되어 enwiki 에서 중복(ClueBot NG 가 롤백 태그로 되돌림: 합 .684, 합집합 .570). strict 항등식과 그림 2 X 축은 합집합이어야 함. 13_union_share.py 추가(위키·연도별 합집합 점유율), 08 fig2 가 union_share.csv 를 쓰도록 수정, 라벨 대신 범례. 셀 ρ .98→.99, leave-one-out .988~.991, 위키 내 .83~1.00. 표 1 캡션에 중복 가능성·합집합 명시, 그림 2 캡션 "거리 = 점유율 × S" 로 교정. 등록 코드(04) 변경 없음.
+- GitHub: 사용자가 beatsbywoni/wiki-revert-audit 생성·푸시(026d6a0, 공개). 원고 DAS 에 URL 기입. 릴리스 DOI 는 Zenodo-GitHub 연동 후 기입 예정.
+- 교정 후 manuscript_v0.2.docx/pdf, supplement, cover letter 재생성(본문 6,427단어).

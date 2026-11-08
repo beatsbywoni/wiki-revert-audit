@@ -60,6 +60,15 @@ def fig1(grids, outdir):
 
 
 def fig2(grids, years, outdir):
+    """X 축 = 봇 ∪ 도구 점유율. 04 의 bot_share + tool_share 는 봇이 롤백으로 되돌린 경우 중복되므로(enwiki),
+    13_union_share.py 의 union_share.csv 가 있으면 그것을 쓰고 없으면 합(상한)으로 대체한다."""
+    us_path = os.path.join(outdir, "union_share.csv")
+    US = pd.read_csv(us_path, dtype={"year": str}).set_index(["wiki", "year"]) if os.path.exists(us_path) else None
+    def union_share(w, yr, fallback):
+        key = (w, str(yr))
+        if US is not None and key in US.index:
+            return float(US.loc[key, "union_share"])
+        return fallback
     fig, ax = plt.subplots(figsize=(5.2, 3.8))
     rows = []
     for i, w in enumerate(WIKIS):
@@ -71,18 +80,17 @@ def fig2(grids, years, outdir):
             base = r.loc[("F0d3", "W24h")]
             if base.n_anchor < 200 or base.p_reverted <= 0:
                 continue
-            share = base.bot_share + base.tool_share
+            share = union_share(w, yr, base.bot_share + base.tool_share)
             rel = r.loc[("F2r", "W24h"), "delta_vs_F0_pp"] / 100 / base.p_reverted
             ax.scatter(share, rel, s=8 + 40 * np.sqrt(base.n_anchor / 60000), facecolors="none", edgecolors=COLORS[i], lw=0.8, alpha=0.8)
             rows.append(dict(wiki=w, year=yr, n=base.n_anchor, share=share, rel_delta=rel, level="wiki-year"))
         g = grids[w]
         r = g[g.variant == "replace"].set_index(["F", "W"])
         base = r.loc[("F0d3", "W24h")]
-        share = base.bot_share + base.tool_share
+        share = union_share(w, "all", base.bot_share + base.tool_share)
         rel = r.loc[("F2r", "W24h"), "delta_vs_F0_pp"] / 100 / base.p_reverted
         ax.scatter(share, rel, s=70, color=COLORS[i], edgecolors="black", lw=0.6, zorder=5,
-                   marker="o" if ROLE[w] == "confirmatory" else "s")
-        ax.annotate(w, (share, rel), xytext=(5, 4), textcoords="offset points", fontsize=8)
+                   marker="o" if ROLE[w] == "confirmatory" else "s", label=f"{w} ({ROLE[w][:4]}.)")
         rows.append(dict(wiki=w, year="all", n=base.n_anchor, share=share, rel_delta=rel, level="wiki"))
     d = pd.DataFrame(rows)
     yy = d[d.level == "wiki-year"]
@@ -93,6 +101,7 @@ def fig2(grids, years, outdir):
     ax.set_title(f"{len(WIKIS)} wikis (large: circle = confirmatory, square = exploratory)\n"
                  f"and {len(yy)} wiki-year cells (open); dotted = Δ equal to share; cell Spearman ρ = {rho:.2f}", fontsize=8)
     ax.set_xlim(0, 0.75); ax.set_ylim(0, 0.75); ax.grid(lw=0.3, alpha=0.5)
+    ax.legend(fontsize=7, frameon=False, loc="upper left", title="editions (bot-and-tool share, descending)", title_fontsize=7)
     fig.tight_layout()
     for ext in ("png", "pdf"):
         fig.savefig(os.path.join(outdir, f"fig2_dose_response.{ext}"))
