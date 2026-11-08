@@ -1,0 +1,22 @@
+test,estimate,se,p_one_sided,p_holm,note,wiki
+H1 D=Δ(24h)−Δ(∞) > 0,1.4628016085790885,0.0782753574203602,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),enwiki
+H2 S < 0.25,0.1003041946845981,0.0026877882208507,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),enwiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.784948810482802,0.0066073759644556,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),enwiki
+H1 D=Δ(24h)−Δ(∞) > 0,2.4917081951365856,0.0770976284779313,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),itwiki
+H2 S < 0.25,0.1144527986633249,0.0030672865842189,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),itwiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.783254579592043,0.0275690005637729,1.7565360277416175e-10,1.7565360277416175e-10,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),itwiki
+H1 D=Δ(24h)−Δ(∞) > 0,2.2129374960633226,0.0913903901629722,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),kowiki
+H2 S < 0.25,0.1217407615831926,0.0044784691661196,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),kowiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),3.008236001147909,0.050871868672408,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),kowiki
+H1 D=Δ(24h)−Δ(∞) > 0,0.7933994499541628,0.0515967030906359,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),dewiki
+H2 S < 0.25,0.0891669306303452,0.0035865148579855,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),dewiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.6288939787879662,0.0206254527010273,3.2100105170629334e-05,3.2100105170629334e-05,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),dewiki
+H1 D=Δ(24h)−Δ(∞) > 0,0.7667050019167625,0.0535566580259012,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),plwiki
+H2 S < 0.25,0.1112699547295688,0.004854092205762,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),plwiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.4250595746589627,0.0379331240970532,0.9116684871940566,0.9116684871940566,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),plwiki
+H1 D=Δ(24h)−Δ(∞) > 0,0.9052263065766444,0.0496247756520854,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),frwiki
+H2 S < 0.25,0.1195752539242844,0.0049297644918484,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),frwiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.5120213629475,0.0184918121577879,0.3329918571965069,0.3329918571965069,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),frwiki
+H1 D=Δ(24h)−Δ(∞) > 0,0.2416666666666666,0.0323460396395591,3.969047313034935e-14,3.969047313034935e-14,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),jawiki
+H2 S < 0.25,0.1452540747842762,0.0077148795305594,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),jawiki
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.8355062120380268,0.0242407524351382,5.551115123125783e-17,1.1102230246251563e-16,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv),jawiki

@@ -1,0 +1,4 @@
+test,estimate,se,p_one_sided,p_holm,note
+H1 D=Δ(24h)−Δ(∞) > 0,0.7667050019167625,0.0535566580259012,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv)
+H2 S < 0.25,0.1112699547295688,0.004854092205762021,0.0,0.0,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv)
+H4 OR_max/OR_min >= 1.5 (log ratio vs log 1.5),1.4250595746589627,0.037933124097053295,0.9116684871940566,0.9116684871940566,normal approximation to the registered bootstrap test; H3 is a descriptive agreement criterion (see confirmatory.csv)

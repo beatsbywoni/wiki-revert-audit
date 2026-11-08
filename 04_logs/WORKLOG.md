@@ -141,3 +141,25 @@
 - 05_manuscript/draft_v0.1.md: 초록 200단어, 본문 약 4,800단어(표 1 포함; 한도 7,000), 엠대시 0, we 0. 서론·배경(JASIST 연결: Stvilia 2008, Arazy 2013, Illari & Floridi 2013, Lewoniewski 2017, Wang & Li 2019, JASIST 2020·2026)·방법·결과(H1~H4, 음성 대조, 태그 게이트)·논의(체크리스트 6항목)·한계·DAS·참고문헌.
 - [TBD] 11곳: 확증 위키의 첫 편집 ns0 비율, kowiki 연도별 OR 부호 반전 표 인용, 시뮬레이션 표 인용, 강건성 문단(K=5·전체 계정·historical 봇·undo 도구·5초·창 경계·구 앵커 정의·leave-one-out 미집계), GitHub URL·릴리스 DOI, 미주 2개. [verify] 11곳: 참고문헌 DOI·저자·쪽수.
 - 다음: 강건성 집계 스크립트(09_robustness.py) → v0.2; 참고문헌 DOI 대조; 커버레터 초안; docx 변환(JASIST Word 1파일 + Figure1~4 개별).
+
+## 2026-11-08 13:30 (내부 심사 보고서 + 강건성 분석 09/10)
+- 05_manuscript/review_internal_v0.1.md: JASIST 편집자·심사자 관점 평가(E1~E6, R1~R12, W1~W7, M1~M5, G1~G3) 와 v0.2 조치 목록.
+- 03_pipeline/09_robustness.py (위키별) + 10_robustness_summary.py (7개 위키 집계, 그림 5). VM 에 statsmodels 가 없어 로지스틱은 numpy IRLS + 편집자 클러스터 샌드위치(CR1) 로 직접 구현. 등록 격자와 수치 일치 확인(kowiki replace Δ(24h) 9.830 = 04 산출).
+- S1 창 확장: R(12h)·R(48h) 모두 0.98~1.01 → 24h 경계는 민감하지 않음. R(∞) .78~.92 (등록 결과와 동일). S(W) 는 창이 길수록 커짐(24h .09~.15 → ∞ .20~.39).
+- S2 정의 변형(strict Δ 24h): 5초 봇 지표 추가 효과 ≤0.05pp(미신고 봇 우려 무시 가능). undo 를 도구로 포함하면 Δ 가 1.5~2.6배(enwiki 21.1→32.3pp, frwiki 7.2→18.9pp) → "도구" 경계 정의가 가장 큰 지렛대. 익명 되돌림자 추가 제외는 +0.3~2.1pp. historical-only 봇 = current∪historical (차이 0).
+- S3 코호트: 전체 등록 계정·2021+·보조 앵커(2~5번째 편집) 모두 상대 Δ 순위 불변(enwiki > itwiki > kowiki > dewiki > plwiki > frwiki > jawiki).
+- S4 정규근사 p: H1·H2 7/7 p<.001(Holm 후에도). H4 plwiki 1.43(p=.91), frwiki 1.51(p=.33) → 등록 결과(2/3) 와 일치.
+- S5 로지스틱(F2r×W∞ 상호작용) 모두 양(+0.07~+0.31, 클러스터 SE ≤0.008) → H1 의 모형 기반 확인.
+- S6 kowiki 앵커 정의(첫 편집 vs 첫 ns0 편집): Δ 차이 ≤0.08pp. 02_derived/kowiki_anchors_firstns0.parquet 별도 보관.
+- 급증 점검(robust_kowiki_surge.csv, fig5): kowiki 2023-06~2024-12 에 월별 앵커 수 최대 1.9배, 24h 되돌림률 .15→.30~.47, 도구 점유율 .8. 급증 제외 시 R = .865(전체 .775, 급증 구간 .692) → kowiki 의 낮은 R 은 급증 구간이 끌어내린 것. 원고 결과·한계에 기술.
+- 태그 가용성(tag_availability_by_wiki.csv): enwiki twinkle 태그는 2020-09 부터, huggle 태그는 2021~2022 에 거의 없음(1,631·2,409건) → enwiki 2019~2020-08 셀의 도구 점유율 과소 측정. 2021+ 코호트에서 enwiki 상대 Δ .57→.65. 원고 한계에 명시.
+- 다음: 참고문헌 DOI 대조(#12) → v0.2 원고·커버레터·보충자료·그림(#13).
+
+## 2026-11-08 15:10 (참고문헌 대조, 원고 v0.2, 투고 패키지)
+- 참고문헌 Crossref/OpenAlex/DataCite API 로 전수 대조. 오류 2건 교정: asi.22783 은 Illari & Floridi 가 아니라 Mai, J.-E. (2013), 64(4), 675–688; asi.23901 은 Lewoniewski 가 아니라 Jemielniak & Wilamowski (2017), 68(10), 2460–2470. 연도·권호 확정: Wang & Li 71(1) 2020(본문 인용 없어 제거), Rozas & Huckle 72(2) 2021, Gao·Qiu·Zhang·Zhao 2026 advance online, Geiger & Halfaker 2017 1(CSCW) 49, Formisano 13, Art. 1459, Boté-Vericad DataCite 확인.
+- 관행 예시 문헌(W1) 추가·원문 확인: Warncke-Wang et al. 2023 (PACM HCI 7 CSCW2 280; 48h 창 "reverted within 48 hours", 봇 언급 없음), Formisano 2026(content-hash, 제외 없음), Halfaker 2013·TeBlunthuis 2018(reverted + tool-reverted 두 변수), Wikimedia Research:Metrics/revert_rate(제외 규정 없음). mwreverts 소프트웨어 인용 추가.
+- 05_manuscript/draft_v0.2.md: 본문 약 6,300단어(표·캡션 포함, 한도 7,000), 초록 200단어, 엠대시 0, we 0. 서론을 정보품질 지표의 구성타당도로 열고(E1), 방법론 혁신 문장(E2), 항등식 선행(R1), 기호표(표 2, G1), 180일 창(R2), 등록 시점 증빙(E5), AI 선언 상세(E4), H3 기각 선행·기제는 등록 후 탐색 라벨(R8), 강건성 절(09/10 결과, kowiki 급증, enwiki Twinkle), leave-one-wiki-out ρ .976~.987, 모더레이션 함의(G2), 한계 보강. [TBD] 잔여: GitHub URL·릴리스 DOI(투고 시).
+- 그림: 11_figures_submission.py → 05_manuscript/figures/Figure1~4.png(300dpi)+pdf, FigureS1(구 그림 3, 9셀), FigureS2(월별 급증). 그림 3 재구성(위키별 OR 범위 막대). 확인: jawiki·kowiki 는 최소 셀이 F1·24h(F0 와 .002 이내) → 본문·캡션에 명시.
+- 보충자료: 12_supplement.py → supplement_v0.2.md/docx/pdf(표 S1~S8, 그림 S1~S2). 편차 로그 #1~#3 기록(혼합모형→위키별 클러스터 SE 로지스틱, 등록 외 강건성 항목, H3 기제 탐색).
+- 커버레터 cover_letter_v0.2.md/docx(정보과학 연결, 방법론 혁신, 등록, AI 선언, 데이터·코드, 선호 심사자 자리). build_docx.py(pandoc+python-docx: Times 12pt 1.5, 표 폭 자동, 제목 검정) 로 manuscript_v0.2.docx/pdf(20쪽) 생성.
+- 투고 전 사용자 결정 필요: GitHub push·Zenodo 코드 릴리스(DAS 기입), Zenodo 등록 파일 공개 전환, 선호 심사자 명단, 소속·ORCID.
