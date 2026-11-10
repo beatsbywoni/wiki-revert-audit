@@ -1,0 +1,7 @@
+field,n,n_agree,raw_agreement,kappa
+detection,13,11,0.846,0.776
+bot_reverts,13,13,1.0,1.0
+tool_reverts,13,13,1.0,1.0
+self_reverts,13,13,1.0,1.0
+window,13,11,0.846,0.612
+sensitivity_over_revert_choices,13,11,0.846,0.594
