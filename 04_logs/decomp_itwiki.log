@@ -1,0 +1,145 @@
+[itwiki] anchors 59,999 on 47,322 pages
+  all_revs rows 16,199,232  9s
+  pages 0/47,322  103s
+[itwiki] decomp written 154s; join rate first 1.0000
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:157: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fs = A[f"{rule}_first_sec"]; fbot = A[f"{rule}_first_bot"].fillna(False).astype(bool); ftool = A[f"{rule}_first_tool"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:157: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fs = A[f"{rule}_first_sec"]; fbot = A[f"{rule}_first_bot"].fillna(False).astype(bool); ftool = A[f"{rule}_first_tool"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:158: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fself = A[f"{rule}_first_self"].fillna(False).astype(bool); fanon = A[f"{rule}_first_anon"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:157: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fs = A[f"{rule}_first_sec"]; fbot = A[f"{rule}_first_bot"].fillna(False).astype(bool); ftool = A[f"{rule}_first_tool"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:157: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fs = A[f"{rule}_first_sec"]; fbot = A[f"{rule}_first_bot"].fillna(False).astype(bool); ftool = A[f"{rule}_first_tool"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:158: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  fself = A[f"{rule}_first_self"].fillna(False).astype(bool); fanon = A[f"{rule}_first_anon"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:200: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  gap = A.loc[m, f"{rule}_ntaf_gap"]; ra = A.loc[m, f"{rule}_ntaf_reinst_anchor"].fillna(False).astype(bool)
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/14_successor_decomposition.py:201: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  rs_ = A.loc[m, f"{rule}_ntaf_reinst_span"].fillna(False).astype(bool); sf = A.loc[m, f"{rule}_ntaf_self"].fillna(False).astype(bool)
+rule               W  delta_strict_pp  delta_replace_pp     S  S_lo  S_hi
+  d3            W24h           17.955            15.900 0.114 0.109 0.121
+  d3            Winf           18.609            13.409 0.279 0.272 0.288
+  d3  R_inf_over_24h              NaN               NaN 0.843 0.834 0.853
+  d3 R_180d_over_24h              NaN               NaN 0.857 0.848 0.865
+ d3r            W24h           17.944            17.344 0.033 0.030 0.037
+ d3r            Winf           18.584            17.760 0.044 0.041 0.048
+ d3r  R_inf_over_24h              NaN               NaN 1.024 1.020 1.029
+ d3r R_180d_over_24h              NaN               NaN 1.024 1.020 1.029
+rule    W  first_class  n_first  share_of_first  p_followup_manual  p_followup_manual_not_self
+  d3 W24h          bot        2           0.000              0.000                       0.000
+  d3 W24h         tool    10771           0.527              0.114                       0.111
+  d3 W24h manual_other     8325           0.407              0.171                       0.168
+  d3 W24h         anon      493           0.024              0.239                       0.235
+  d3 W24h         self      850           0.042              0.134                       0.102
+  d3 Winf          bot       14           0.001              0.357                       0.286
+  d3 Winf         tool    11151           0.505              0.279                       0.276
+  d3 Winf manual_other     9311           0.421              0.317                       0.313
+  d3 Winf         anon      755           0.034              0.326                       0.319
+  d3 Winf         self      865           0.039              0.281                       0.247
+ d3r W24h          bot        2           0.000              0.000                       0.000
+ d3r W24h         tool    10764           0.529              0.033                       0.033
+ d3r W24h manual_other     8231           0.405              0.025                       0.023
+ d3r W24h         anon      491           0.024              0.063                       0.061
+ d3r W24h         self      847           0.042              0.046                       0.038
+ d3r Winf          bot       10           0.000              0.000                       0.000
+ d3r Winf         tool    11140           0.509              0.044                       0.043
+ d3r Winf manual_other     9136           0.418              0.034                       0.032
+ d3r Winf         anon      732           0.033              0.060                       0.057
+ d3r Winf         self      862           0.039              0.067                       0.057
+  wiki rule     W        group  n_followups  reinstated_anchor  reinstated_span_not_anchor  immediate_deeper  other_churn  followup_by_anchor_author  median_gap  median_days_after_first
+itwiki   d3  W24h   auto_first         1233              0.106                       0.011             0.216        0.710                      0.029         1.0                    0.019
+itwiki   d3  W24h manual_first         1542              0.134                       0.012             0.109        0.792                      0.020         1.0                    0.016
+itwiki   d3   W7d   auto_first         1914              0.091                       0.008             0.156        0.784                      0.021         1.0                    0.215
+itwiki   d3   W7d manual_first         2221              0.113                       0.010             0.095        0.818                      0.018         1.0                    0.111
+itwiki   d3 W180d   auto_first         2983              0.084                       0.006             0.111        0.835                      0.014         1.0                    2.276
+itwiki   d3 W180d manual_first         3113              0.099                       0.011             0.077        0.845                      0.014         1.0                    0.792
+itwiki   d3  Winf   auto_first         3120              0.083                       0.006             0.107        0.841                      0.013         1.0                    2.772
+itwiki   d3  Winf manual_first         3200              0.097                       0.011             0.076        0.848                      0.013         1.0                    0.871
+itwiki  d3r  W24h   auto_first          360              0.031                       0.006             0.717        0.258                      0.025         0.0                    0.002
+itwiki  d3r  W24h manual_first          233              0.047                       0.009             0.652        0.305                      0.069         0.0                    0.006
+itwiki  d3r   W7d   auto_first          419              0.033                       0.005             0.685        0.289                      0.029         0.0                    0.004
+itwiki  d3r   W7d manual_first          292              0.041                       0.010             0.651        0.308                      0.068         0.0                    0.015
+itwiki  d3r W180d   auto_first          486              0.035                       0.004             0.652        0.321                      0.025         0.0                    0.015
+itwiki  d3r W180d manual_first          348              0.049                       0.009             0.626        0.328                      0.060         0.0                    0.037
+itwiki  d3r  Winf   auto_first          494              0.034                       0.004             0.648        0.326                      0.024         0.0                    0.017
+itwiki  d3r  Winf manual_first          352              0.048                       0.009             0.625        0.330                      0.060         0.0                    0.044
+rule    W  p_F0  self_share_of_first  delta_strict_excl_self_pp  delta_replace_excl_self_pp  S_excl_self  OR_F0_all  OR_F0_excl_self  OR_F2strict_all  OR_F2strict_excl_self
+  d3 W24h 0.341                0.042                     18.213                      16.129        0.114      0.383            0.377            0.567                  0.559
+  d3 Winf 0.368                0.039                     18.881                      13.605        0.279      0.466            0.460            0.666                  0.662
+ d3r W24h 0.339                0.042                     18.201                      17.592        0.033      0.384            0.377            0.568                  0.561
+ d3r Winf 0.365                0.039                     18.855                      18.019        0.044      0.458            0.452            0.652                  0.646
+  wiki                                         group     n  share_of_within_radius  untagged  share_of_all_untagged
+itwiki                                           all 15475                   1.000     0.120                  1.000
+itwiki                                           bot     6                   0.000     0.000                  0.000
+itwiki                                          tool  8233                   0.532     0.031                  0.139
+itwiki                                          self   601                   0.039     0.717                  0.233
+itwiki                                          anon   460                   0.030     0.796                  0.198
+itwiki                                  manual_other  6175                   0.399     0.129                  0.430
+itwiki                        manual_other: undo tag  4275                   0.276     0.112                  0.259
+itwiki          manual_other: manual-revert tag only  1897                   0.123     0.167                  0.171
+itwiki                   manual_other: no revert tag     3                   0.000     0.667                  0.001
+itwiki                        span = 1 (anchor only) 11216                   0.725     0.117                  0.707
+itwiki                                     span 2-15  4259                   0.275     0.127                  0.293
+itwiki REVERSE: tagged, no radius-15 identity revert   109                   0.008       NaN                    NaN
