@@ -1,0 +1,8 @@
+[kowiki] target revisions 23,852; cohort users 59,618
+  2026-09.kowiki.2019.tsv.bz2: rows 2,647,557; kept revisions 2,633, block events 1,101; 139s
+  2026-09.kowiki.2020.tsv.bz2: rows 3,645,283; kept revisions 3,313, block events 313; 331s
+  2026-09.kowiki.2021.tsv.bz2: rows 3,235,470; kept revisions 2,366, block events 202; 499s
+  2026-09.kowiki.2022.tsv.bz2: rows 3,274,896; kept revisions 1,821, block events 96; 696s
+  2026-09.kowiki.2023.tsv.bz2: rows 3,152,993; kept revisions 3,441, block events 62; 856s
+  2026-09.kowiki.2024.tsv.bz2: rows 2,728,376; kept revisions 6,446, block events 113; 1,022s
+[kowiki] stream extraction done: revisions 20,020 of 23,852 targets, block events 1,887; 1,022s

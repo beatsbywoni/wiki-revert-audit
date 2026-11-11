@@ -1,0 +1,10 @@
+[dewiki] target revisions 90,599; cohort users 289,854
+  2026-09.dewiki.2019.tsv.bz2: rows 12,146,898; kept revisions 15,625, block events 4,958; 881s
+  2026-09.dewiki.2020.tsv.bz2: rows 12,620,365; kept revisions 14,656, block events 813; 1,821s
+  2026-09.dewiki.2021.tsv.bz2: rows 12,281,958; kept revisions 13,964, block events 803; 2,740s
+  2026-09.dewiki.2022.tsv.bz2: rows 11,334,353; kept revisions 11,763, block events 668; 3,624s
+  2026-09.dewiki.2023.tsv.bz2: rows 11,796,996; kept revisions 12,281, block events 569; 4,551s
+  2026-09.dewiki.2024.tsv.bz2: rows 11,262,823; kept revisions 10,634, block events 604; 5,447s
+  2026-09.dewiki.2025.tsv.bz2: rows 11,053,137; kept revisions 8,754, block events 578; 6,327s
+  2026-09.dewiki.2026.tsv.bz2: rows 7,777,671; kept revisions 2,922, block events 312; 6,937s
+[dewiki] stream extraction done: revisions 90,599 of 90,599 targets, block events 9,305; 6,937s

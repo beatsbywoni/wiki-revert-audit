@@ -1,0 +1,10 @@
+[plwiki] target revisions 32,937; cohort users 85,443
+  2026-09.plwiki.2019.tsv.bz2: rows 3,549,863; kept revisions 4,099, block events 1,059; 214s
+  2026-09.plwiki.2020.tsv.bz2: rows 4,235,079; kept revisions 5,307, block events 495; 473s
+  2026-09.plwiki.2021.tsv.bz2: rows 4,534,019; kept revisions 5,516, block events 456; 759s
+  2026-09.plwiki.2022.tsv.bz2: rows 3,951,182; kept revisions 5,415, block events 391; 1,012s
+  2026-09.plwiki.2023.tsv.bz2: rows 3,727,386; kept revisions 4,318, block events 459; 1,256s
+  2026-09.plwiki.2024.tsv.bz2: rows 3,897,576; kept revisions 4,179, block events 403; 1,504s
+  2026-09.plwiki.2025.tsv.bz2: rows 3,354,170; kept revisions 3,185, block events 504; 1,725s
+  2026-09.plwiki.2026.tsv.bz2: rows 2,885,700; kept revisions 918, block events 197; 1,915s
+[plwiki] stream extraction done: revisions 32,937 of 32,937 targets, block events 3,964; 1,915s

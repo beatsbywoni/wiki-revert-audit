@@ -1,0 +1,10 @@
+[itwiki] target revisions 71,854; cohort users 168,749
+  2026-09.itwiki.2019.tsv.bz2: rows 9,188,208; kept revisions 12,053, block events 5,383; 570s
+  2026-09.itwiki.2020.tsv.bz2: rows 9,132,938; kept revisions 13,589, block events 2,948; 1,132s
+  2026-09.itwiki.2021.tsv.bz2: rows 8,337,237; kept revisions 11,867, block events 2,775; 1,637s
+  2026-09.itwiki.2022.tsv.bz2: rows 7,442,290; kept revisions 9,925, block events 2,334; 2,151s
+  2026-09.itwiki.2023.tsv.bz2: rows 6,820,450; kept revisions 8,772, block events 2,405; 2,625s
+  2026-09.itwiki.2024.tsv.bz2: rows 6,639,630; kept revisions 7,573, block events 2,304; 3,078s
+  2026-09.itwiki.2025.tsv.bz2: rows 6,998,951; kept revisions 6,512, block events 2,443; 3,537s
+  2026-09.itwiki.2026.tsv.bz2: rows 5,334,591; kept revisions 1,563, block events 857; 3,864s
+[itwiki] stream extraction done: revisions 71,854 of 71,854 targets, block events 21,449; 3,864s

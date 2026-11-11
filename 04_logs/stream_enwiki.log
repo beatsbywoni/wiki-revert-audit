@@ -1,0 +1,113 @@
+[enwiki] target revisions 990,653; cohort users 2,488,692
+  2026-09.enwiki.2019-01.tsv.bz2: rows 5,837,618; kept revisions 16,458, block events 3,513; 460s
+  2026-09.enwiki.2019-02.tsv.bz2: rows 5,231,774; kept revisions 15,274, block events 3,782; 873s
+  2026-09.enwiki.2019-03.tsv.bz2: rows 5,675,889; kept revisions 15,495, block events 4,046; 1,316s
+  2026-09.enwiki.2019-04.tsv.bz2: rows 5,344,959; kept revisions 14,510, block events 4,051; 1,740s
+  2026-09.enwiki.2019-05.tsv.bz2: rows 5,660,137; kept revisions 14,304, block events 3,017; 2,188s
+  2026-09.enwiki.2019-06.tsv.bz2: rows 5,309,504; kept revisions 12,104, block events 2,097; 2,608s
+  2026-09.enwiki.2019-07.tsv.bz2: rows 5,256,358; kept revisions 11,462, block events 1,686; 3,024s
+  2026-09.enwiki.2019-08.tsv.bz2: rows 5,381,682; kept revisions 12,549, block events 1,804; 3,453s
+  2026-09.enwiki.2019-09.tsv.bz2: rows 6,353,567; kept revisions 13,517, block events 1,978; 3,963s
+  2026-09.enwiki.2019-10.tsv.bz2: rows 5,910,541; kept revisions 15,495, block events 2,182; 4,435s
+  2026-09.enwiki.2019-11.tsv.bz2: rows 5,522,883; kept revisions 15,302, block events 2,232; 4,873s
+  2026-09.enwiki.2019-12.tsv.bz2: rows 5,527,304; kept revisions 14,004, block events 1,776; 5,312s
+  2026-09.enwiki.2020-01.tsv.bz2: rows 5,994,098; kept revisions 15,021, block events 904; 5,803s
+  2026-09.enwiki.2020-02.tsv.bz2: rows 5,498,678; kept revisions 15,303, block events 401; 6,238s
+  2026-09.enwiki.2020-03.tsv.bz2: rows 5,984,089; kept revisions 14,545, block events 601; 6,710s
+  2026-09.enwiki.2020-04.tsv.bz2: rows 6,637,205; kept revisions 14,991, block events 548; 7,274s
+  2026-09.enwiki.2020-05.tsv.bz2: rows 6,852,566; kept revisions 16,116, block events 725; 7,840s
+  2026-09.enwiki.2020-06.tsv.bz2: rows 6,172,841; kept revisions 14,440, block events 542; 8,341s
+  2026-09.enwiki.2020-07.tsv.bz2: rows 5,990,980; kept revisions 13,539, block events 585; 8,838s
+  2026-09.enwiki.2020-08.tsv.bz2: rows 6,728,836; kept revisions 13,139, block events 454; 9,321s
+  2026-09.enwiki.2020-09.tsv.bz2: rows 5,985,978; kept revisions 13,505, block events 481; 9,782s
+  2026-09.enwiki.2020-10.tsv.bz2: rows 6,033,424; kept revisions 13,939, block events 509; 10,286s
+  2026-09.enwiki.2020-11.tsv.bz2: rows 5,919,147; kept revisions 13,344, block events 503; 10,763s
+[enwiki] target revisions 990,653; cohort users 2,488,692
+  2026-09.enwiki.2020-12.tsv.bz2: rows 6,789,870; kept revisions 13,172, block events 642; 494s
+  2026-09.enwiki.2021-01.tsv.bz2: rows 7,616,943; kept revisions 17,295, block events 549; 1,092s
+  2026-09.enwiki.2021-02.tsv.bz2: rows 6,426,969; kept revisions 14,091, block events 453; 1,586s
+  2026-09.enwiki.2021-03.tsv.bz2: rows 6,908,378; kept revisions 14,555, block events 492; 2,131s
+  2026-09.enwiki.2021-04.tsv.bz2: rows 6,256,515; kept revisions 12,876, block events 384; 2,633s
+  2026-09.enwiki.2021-05.tsv.bz2: rows 6,219,675; kept revisions 13,225, block events 533; 3,136s
+  2026-09.enwiki.2021-06.tsv.bz2: rows 5,903,574; kept revisions 11,962, block events 628; 3,587s
+  2026-09.enwiki.2021-07.tsv.bz2: rows 5,967,729; kept revisions 10,904, block events 493; 4,060s
+  2026-09.enwiki.2021-08.tsv.bz2: rows 5,913,886; kept revisions 11,284, block events 449; 4,535s
+curl: (56) Recv failure: Can't assign requested address
+
+bzip2: Compressed file ends unexpectedly;
+	perhaps it is corrupted?  *Possible* reason follows.
+bzip2: Operation not supported
+	Input file = (stdin), output file = (stdout)
+
+It is possible that the compressed file(s) have become corrupted.
+You can use the -tvv option to test integrity of such files.
+
+You can use the `bzip2recover' program to attempt to recover
+data from undamaged sections of corrupted files.
+
+stream failed for 2026-09.enwiki.2021-09.tsv.bz2 (exit 2); rerun to resume
+[enwiki] target revisions 990,653; cohort users 2,488,692
+  2026-09.enwiki.2021-09.tsv.bz2: rows 6,467,090; kept revisions 11,021, block events 441; 565s
+  2026-09.enwiki.2021-10.tsv.bz2: rows 6,321,282; kept revisions 11,148, block events 388; 1,083s
+  2026-09.enwiki.2021-11.tsv.bz2: rows 5,789,065; kept revisions 11,326, block events 389; 1,544s
+  2026-09.enwiki.2021-12.tsv.bz2: rows 5,778,212; kept revisions 10,168, block events 392; 2,028s
+  2026-09.enwiki.2022-01.tsv.bz2: rows 6,982,090; kept revisions 11,600, block events 398; 2,581s
+  2026-09.enwiki.2022-02.tsv.bz2: rows 6,101,127; kept revisions 11,908, block events 404; 3,064s
+  2026-09.enwiki.2022-03.tsv.bz2: rows 6,546,930; kept revisions 12,228, block events 432; 3,607s
+  2026-09.enwiki.2022-04.tsv.bz2: rows 5,805,709; kept revisions 11,123, block events 496; 4,083s
+  2026-09.enwiki.2022-05.tsv.bz2: rows 6,074,365; kept revisions 10,893, block events 358; 4,563s
+  2026-09.enwiki.2022-06.tsv.bz2: rows 5,773,363; kept revisions 9,798, block events 389; 5,036s
+  2026-09.enwiki.2022-07.tsv.bz2: rows 6,392,364; kept revisions 9,187, block events 492; 5,560s
+  2026-09.enwiki.2022-08.tsv.bz2: rows 6,822,199; kept revisions 9,794, block events 376; 6,135s
+  2026-09.enwiki.2022-09.tsv.bz2: rows 6,221,655; kept revisions 10,514, block events 394; 6,671s
+  2026-09.enwiki.2022-10.tsv.bz2: rows 6,753,295; kept revisions 11,418, block events 377; 7,268s
+  2026-09.enwiki.2022-11.tsv.bz2: rows 6,228,129; kept revisions 11,218, block events 363; 7,805s
+  2026-09.enwiki.2022-12.tsv.bz2: rows 6,613,706; kept revisions 11,232, block events 374; 8,378s
+  2026-09.enwiki.2023-01.tsv.bz2: rows 6,774,199; kept revisions 12,315, block events 441; 8,919s
+  2026-09.enwiki.2023-02.tsv.bz2: rows 6,173,786; kept revisions 11,897, block events 416; 9,410s
+  2026-09.enwiki.2023-03.tsv.bz2: rows 6,186,774; kept revisions 13,155, block events 411; 9,914s
+  2026-09.enwiki.2023-04.tsv.bz2: rows 5,717,211; kept revisions 12,278, block events 435; 10,338s
+  2026-09.enwiki.2023-05.tsv.bz2: rows 6,104,691; kept revisions 11,658, block events 374; 10,806s
+  2026-09.enwiki.2023-06.tsv.bz2: rows 5,514,362; kept revisions 10,146, block events 375; 11,236s
+  2026-09.enwiki.2023-07.tsv.bz2: rows 6,192,001; kept revisions 10,258, block events 381; 11,722s
+  2026-09.enwiki.2023-08.tsv.bz2: rows 5,746,400; kept revisions 10,795, block events 343; 12,208s
+  2026-09.enwiki.2023-09.tsv.bz2: rows 5,455,229; kept revisions 10,846, block events 344; 12,692s
+  2026-09.enwiki.2023-10.tsv.bz2: rows 5,598,457; kept revisions 11,528, block events 413; 13,180s
+  2026-09.enwiki.2023-11.tsv.bz2: rows 5,567,718; kept revisions 10,651, block events 405; 13,642s
+  2026-09.enwiki.2023-12.tsv.bz2: rows 5,862,624; kept revisions 9,604, block events 369; 14,138s
+  2026-09.enwiki.2024-01.tsv.bz2: rows 9,482,009; kept revisions 11,024, block events 375; 14,917s
+  2026-09.enwiki.2024-02.tsv.bz2: rows 10,237,745; kept revisions 10,163, block events 342; 15,798s
+  2026-09.enwiki.2024-03.tsv.bz2: rows 6,258,848; kept revisions 10,347, block events 326; 16,299s
+  2026-09.enwiki.2024-04.tsv.bz2: rows 5,785,316; kept revisions 9,428, block events 355; 16,773s
+  2026-09.enwiki.2024-05.tsv.bz2: rows 5,782,146; kept revisions 9,683, block events 308; 17,247s
+  2026-09.enwiki.2024-06.tsv.bz2: rows 5,869,096; kept revisions 8,233, block events 277; 17,755s
+  2026-09.enwiki.2024-07.tsv.bz2: rows 6,610,401; kept revisions 8,417, block events 360; 18,323s
+  2026-09.enwiki.2024-08.tsv.bz2: rows 6,225,029; kept revisions 8,694, block events 377; 18,874s
+  2026-09.enwiki.2024-09.tsv.bz2: rows 6,041,273; kept revisions 8,609, block events 346; 19,402s
+  2026-09.enwiki.2024-10.tsv.bz2: rows 6,646,945; kept revisions 9,780, block events 392; 19,951s
+  2026-09.enwiki.2024-11.tsv.bz2: rows 6,507,133; kept revisions 9,596, block events 386; 20,477s
+curl: (28) Failed to connect to dumps.wikimedia.org port 443 after 75003 ms: Couldn't connect to server
+  2026-09.enwiki.2024-12.tsv.bz2: rows 6,796,946; kept revisions 8,965, block events 364; 21,125s
+  2026-09.enwiki.2025-01.tsv.bz2: rows 7,468,006; kept revisions 9,743, block events 378; 21,760s
+  2026-09.enwiki.2025-02.tsv.bz2: rows 5,803,534; kept revisions 9,248, block events 390; 22,191s
+  2026-09.enwiki.2025-03.tsv.bz2: rows 5,866,531; kept revisions 9,195, block events 376; 22,469s
+  2026-09.enwiki.2025-04.tsv.bz2: rows 5,508,961; kept revisions 8,032, block events 346; 22,723s
+  2026-09.enwiki.2025-05.tsv.bz2: rows 5,850,839; kept revisions 8,365, block events 387; 22,901s
+  2026-09.enwiki.2025-06.tsv.bz2: rows 5,501,835; kept revisions 7,327, block events 351; 23,026s
+  2026-09.enwiki.2025-07.tsv.bz2: rows 6,144,125; kept revisions 7,700, block events 398; 23,178s
+  2026-09.enwiki.2025-08.tsv.bz2: rows 6,148,762; kept revisions 7,354, block events 403; 23,325s
+  2026-09.enwiki.2025-09.tsv.bz2: rows 6,265,162; kept revisions 7,589, block events 400; 23,481s
+  2026-09.enwiki.2025-10.tsv.bz2: rows 6,179,585; kept revisions 8,044, block events 392; 23,610s
+  2026-09.enwiki.2025-11.tsv.bz2: rows 6,309,776; kept revisions 7,447, block events 472; 23,721s
+  2026-09.enwiki.2025-12.tsv.bz2: rows 6,548,321; kept revisions 6,491, block events 411; 23,840s
+  2026-09.enwiki.2026-01.tsv.bz2: rows 6,504,040; kept revisions 7,520, block events 432; 23,952s
+  2026-09.enwiki.2026-02.tsv.bz2: rows 6,093,758; kept revisions 7,180, block events 424; 24,058s
+  2026-09.enwiki.2026-03.tsv.bz2: rows 6,606,230; kept revisions 7,453, block events 476; 24,172s
+  2026-09.enwiki.2026-04.tsv.bz2: rows 6,449,483; kept revisions 1,048, block events 209; 24,293s
+  2026-09.enwiki.2026-05.tsv.bz2: rows 6,283,222; kept revisions 154, block events 214; 24,413s
+  2026-09.enwiki.2026-06.tsv.bz2: rows 5,871,956; kept revisions 138, block events 177; 24,517s
+  2026-09.enwiki.2026-07.tsv.bz2: rows 6,173,261; kept revisions 92, block events 170; 24,628s
+  2026-09.enwiki.2026-08.tsv.bz2: rows 6,454,784; kept revisions 84, block events 125; 24,743s
+  2026-09.enwiki.2026-09.tsv.bz2: rows 6,369,430; kept revisions 83, block events 131; 24,858s
+  2026-09.enwiki.2026-10.tsv.bz2: rows 18,512; kept revisions 0, block events 3; 24,860s
+[enwiki] stream extraction done: revisions 542,933 of 990,653 targets, block events 22,443; 24,860s

@@ -1,0 +1,10 @@
+[frwiki] target revisions 113,097; cohort users 413,873
+  2026-09.frwiki.2019.tsv.bz2: rows 12,509,139; kept revisions 20,846, block events 6,963; 836s
+  2026-09.frwiki.2020.tsv.bz2: rows 14,533,583; kept revisions 19,297, block events 1,227; 1,815s
+  2026-09.frwiki.2021.tsv.bz2: rows 13,144,041; kept revisions 18,417, block events 967; 2,730s
+  2026-09.frwiki.2022.tsv.bz2: rows 12,582,778; kept revisions 15,111, block events 1,175; 3,599s
+  2026-09.frwiki.2023.tsv.bz2: rows 12,856,682; kept revisions 14,738, block events 1,206; 4,504s
+  2026-09.frwiki.2024.tsv.bz2: rows 12,174,507; kept revisions 11,884, block events 1,030; 5,393s
+  2026-09.frwiki.2025.tsv.bz2: rows 12,038,428; kept revisions 9,981, block events 1,053; 6,290s
+  2026-09.frwiki.2026.tsv.bz2: rows 9,414,212; kept revisions 2,823, block events 406; 6,992s
+[frwiki] stream extraction done: revisions 113,097 of 113,097 targets, block events 14,027; 6,992s

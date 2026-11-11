@@ -1,0 +1,10 @@
+[jawiki] target revisions 47,313; cohort users 247,119
+  2026-09.jawiki.2019.tsv.bz2: rows 4,955,590; kept revisions 7,184, block events 3,825; 335s
+  2026-09.jawiki.2020.tsv.bz2: rows 6,199,517; kept revisions 8,657, block events 1,215; 731s
+  2026-09.jawiki.2021.tsv.bz2: rows 6,845,873; kept revisions 7,718, block events 935; 1,216s
+  2026-09.jawiki.2022.tsv.bz2: rows 6,473,329; kept revisions 7,967, block events 873; 1,674s
+  2026-09.jawiki.2023.tsv.bz2: rows 6,024,713; kept revisions 6,475, block events 886; 2,098s
+  2026-09.jawiki.2024.tsv.bz2: rows 4,901,845; kept revisions 5,166, block events 981; 2,449s
+  2026-09.jawiki.2025.tsv.bz2: rows 5,298,149; kept revisions 3,411, block events 1,076; 2,836s
+  2026-09.jawiki.2026.tsv.bz2: rows 3,914,833; kept revisions 735, block events 412; 3,169s
+[jawiki] stream extraction done: revisions 47,313 of 47,313 targets, block events 10,203; 3,169s

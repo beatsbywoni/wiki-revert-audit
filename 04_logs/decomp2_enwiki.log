@@ -1,0 +1,5 @@
+[enwiki] anchors 59,680 on 55,425 pages
+  all_revs rows 21,606,165  34s
+  pages 0/55,425  149s
+  pages 50,000/55,425  206s
+[enwiki] decomp v2 written 232s; anchors 59,680; join rate 1.0000; target revisions 990,653; cohort users 2,488,692

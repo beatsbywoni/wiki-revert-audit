@@ -1,0 +1,470 @@
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done enwiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done itwiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done kowiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done dewiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done plwiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done frwiki
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+/Users/hongwonjeong/Desktop/wiki-revert-audit/03_pipeline/15_revision_tables.py:56: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  return s.fillna(False).astype(bool).to_numpy()
+done jawiki
+written

@@ -1,7 +1,7 @@
-"""Figures for the revised manuscript (v0.3). Reads 04_output/rev_*.csv; writes 05_manuscript/figures_v03/Figure1..4.(png|pdf) at 300 dpi.
+"""Figures for the revised manuscript (v0.4). Reads 04_output/rev_*.csv; writes 05_manuscript/figures_v04/Figure1..4.(png|pdf) at 300 dpi.
 
 Figure 1  Who makes the first revert of a newcomer's first edit within 24 hours (stacked, in percent of all first edits)
-Figure 2  Follow-up manual reverts after the first revert, by who reverted first, under two attribution rules
+Figure 2  Follow-up manual reverts by a third party after the first revert (clock from the first revert), by who reverted first, under two attribution rules
 Figure 3  Retention (an edit on days 2 to 60) by who made the first revert within 24 hours
 Figure 4  Reverts whose reverted edit carries no mw-reverted tag, by reverter class and patrolling regime
 Palette: validated categorical order (blue, orange, aqua, yellow, magenta); identity is never colour-alone (hatching, markers, direct labels).
@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-O = os.path.join(ROOT, "04_output"); FIG = os.path.join(ROOT, "05_manuscript", "figures_v03")
+O = os.path.join(ROOT, "04_output"); FIG = os.path.join(ROOT, "05_manuscript", "figures_v04")
 WIKIS = ["enwiki", "itwiki", "kowiki", "dewiki", "plwiki", "frwiki", "jawiki"]
 NAME = {"enwiki": "English", "itwiki": "Italian", "kowiki": "Korean", "dewiki": "German", "plwiki": "Polish", "frwiki": "French", "jawiki": "Japanese"}
 CONF = {"jawiki", "plwiki", "itwiki"}
@@ -58,24 +58,24 @@ def fig1():
 
 
 def fig2():
-    f = pd.read_csv(os.path.join(O, "rev_followup.csv"))
+    f = pd.read_csv(os.path.join(O, "rev_followup.csv")); f = f[(f.clock == "from first revert") & (f.stratum == "all")]
     fig, axes = plt.subplots(2, 2, figsize=(7.0, 4.6), sharey=True)
     for i, (rule, rname) in enumerate([("d3", "History-dump rule (no radius)"), ("d3r", "15-revision radius rule")]):
-        for j, (wn, wname) in enumerate([("W24h", "within 24 hours"), ("Winf", "unbounded")]):
+        for j, (wn, wname) in enumerate([("W24h", "within 24 hours of the first revert"), ("Winf", "unbounded")]):
             ax = axes[i, j]
             for k, w in enumerate(WIKIS[::-1]):
                 for cls, col, mk, dy, label in [("bot_or_tool", ORANGE, "o", 0.16, "First revert by a bot or one-click tool"),
-                                                ("any_manual", AQUA, "s", -0.16, "First revert manual, by another editor")]:
+                                                ("any_manual", AQUA, "s", -0.16, "First revert manual, by someone other than the author")]:
                     r = f[(f.wiki == w) & (f.rule == rule) & (f.W == wn) & (f.first_class == cls)]
                     if r.empty: continue
                     r = r.iloc[0]
-                    ax.errorbar(r.followup * 100, k + dy, xerr=[[(r.followup - r.lo) * 100], [(r.hi - r.followup) * 100]], fmt=mk, ms=4.5, color=col,
+                    ax.errorbar(r.followup_third_party * 100, k + dy, xerr=[[(r.followup_third_party - r.lo) * 100], [(r.hi - r.followup_third_party) * 100]], fmt=mk, ms=4.5, color=col,
                                 ecolor=col, elinewidth=1, capsize=0, label=label if k == 0 else None, markeredgecolor="white", markeredgewidth=0.6)
             ax.set_title(f"{rname}, {wname}", fontsize=8); ax.xaxis.grid(True, lw=0.3, color="#dddddd"); ax.set_axisbelow(True)
-            ax.set_xlim(0, 46 if rule == "d3" else 9); ax.set_yticks(range(len(WIKIS))); ax.set_yticklabels([lab(w) for w in WIKIS[::-1]])
-            if i == 1: ax.set_xlabel("Anchors with a later manual revert (%)")
+            ax.set_xlim(0, 40 if rule == "d3" else 6.5); ax.set_yticks(range(len(WIKIS))); ax.set_yticklabels([lab(w) for w in WIKIS[::-1]])
     h, l = axes[0, 0].get_legend_handles_labels()
     fig.legend(h, l, fontsize=7.5, frameon=False, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.03))
+    fig.supxlabel("First edits with a later manual revert by a third party (%)", fontsize=8.5)
     fig.tight_layout(rect=(0, 0, 1, 0.97)); save(fig, "Figure2")
 
 
@@ -85,7 +85,7 @@ def wilson(p, n, z=1.96):
 
 
 def fig3():
-    r = pd.read_csv(os.path.join(O, "rev_retention.csv"))
+    r = pd.read_csv(os.path.join(O, "rev_retention.csv")); r = r[r.variant == "all newcomers"]
     fig, ax = plt.subplots(figsize=(6.6, 3.4))
     spec = [("tool", "Reverted with a one-click tool", ORANGE, "o"), ("manual_other", "Reverted manually by another registered editor", AQUA, "s"),
             ("self", "Self-reverted", MAGENTA, "D")]
@@ -109,7 +109,7 @@ def fig3():
 
 
 def fig4():
-    t = pd.read_csv(os.path.join(O, "rev_taggap.csv"))
+    t = pd.read_csv(os.path.join(O, "rev_taggap.csv")); t = t[t.breakdown == "class"]
     regimes = [("No edit patrolling", ["enwiki", "kowiki", "jawiki"]), ("FlaggedRevs", ["dewiki", "plwiki"]), ("Recent-changes patrolling", ["itwiki", "frwiki"])]
     classes = [("tool", "One-click tool"), ("manual_other", "Other registered,\nmanual"), ("self", "Newcomer\n(self-revert)"), ("anon", "Unregistered\neditor")]
     cols = [BLUE, ORANGE, AQUA]; mks = ["o", "s", "D"]
