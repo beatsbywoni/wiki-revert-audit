@@ -162,6 +162,9 @@ def sample_tables(wiki, R):
         auto = fbot | ftool
         # third-party follow-up: first of nt1..nt5 made neither by the author nor by the account that made the first revert
         tp_sec = np.full(n, np.nan); tp_after = np.full(n, np.nan); tp_gap = np.full(n, np.nan); tp_ra = np.zeros(n, bool); tp_rs = np.zeros(n, bool)
+        # symmetric variant (round 3): the follow-up reverter must be a REGISTERED account different from the author and from the first reverter.
+        # Unregistered follow-up reverters have no account id and would otherwise always count as third parties.
+        rtp_after = np.full(n, np.nan)
         any_sec = A[f"{rule}_nt1_sec"].astype(float).to_numpy()
         for k in range(1, 6):
             u = A[f"{rule}_nt{k}_user"].astype(float).to_numpy(); s = A[f"{rule}_nt{k}_sec"].astype(float).to_numpy()
@@ -169,8 +172,13 @@ def sample_tables(wiki, R):
             tp_sec[ok] = s[ok]; tp_after[ok] = A[f"{rule}_nt{k}_sec_after_first"].astype(float).to_numpy()[ok]
             tp_gap[ok] = A[f"{rule}_nt{k}_gap"].astype(float).to_numpy()[ok]
             tp_ra[ok] = boolcol(A[f"{rule}_nt{k}_reinst_anchor"])[ok]; tp_rs[ok] = boolcol(A[f"{rule}_nt{k}_reinst_span"])[ok]
+            okr = ~np.isnan(s) & np.isnan(rtp_after) & ~np.isnan(u) & ~boolcol(A[f"{rule}_nt{k}_anon"]) & (u != author) & (u != fu)
+            rtp_after[okr] = A[f"{rule}_nt{k}_sec_after_first"].astype(float).to_numpy()[okr]
         act = A[f"{rule}_revs_30d_after_first"].astype(float)
-        terc = pd.qcut(act[fs.notna()], 3, labels=False, duplicates="drop").reindex(A.index)
+        # strata fixed before the first revert (round 3): revisions on the page before the measured edit
+        prior = A.page_revs_before.astype(float).to_numpy()
+        terc = pd.Series(np.select([prior < 50, prior < 500], [0, 1], default=2), index=A.index).where(fs.notna())
+        SLAB = {0: "prior revisions under 50", 1: "prior revisions 50 to 499", 2: "prior revisions 500 or more"}
         groupsets = [("bot_or_tool", auto), ("any_manual", np.isin(cls, ["manual_other", "anon"]))] + [(c, cls == c) for c in CLASSES]
         for clock, base_sec in [("from anchor", tp_sec), ("from first revert", tp_after)]:
             for wn, ws in WINS:
@@ -181,18 +189,22 @@ def sample_tables(wiki, R):
                     if k < MINCELL: continue
                     ff = fol & m; kf = int(ff.sum()); lo, hi = wilson(kf, k)
                     deep = (tp_gap == 0) & ~tp_rs
+                    kr = int((inw(rtp_after, ws) & m).sum()) if clock == "from first revert" else None
+                    rlo, rhi = wilson(kr, k) if kr is not None else (np.nan, np.nan)
                     row = dict(wiki=wiki, rule=rule, clock=clock, W=wn, first_class=c, stratum="all", n_first=k, followup_third_party=kf / k, lo=lo, hi=hi,
+                               followup_registered_third_party=(kr / k if kr is not None else np.nan), reg_lo=rlo, reg_hi=rhi,
                                after_reinstatement=int((ff & tp_ra).sum()) / k, immediate_deeper=int((ff & deep).sum()) / k,
                                after_other_edits=int((ff & ~tp_ra & ~deep).sum()) / k,
                                followup_any_account=int((inw(any_sec if clock == "from anchor" else A[f"{rule}_nt1_sec_after_first"], ws) & m).sum()) / k)
                     R["fu"].append(row)
-                    if c in ("bot_or_tool", "any_manual") and wn in ("W24h", "Winf") and clock == "from first revert":
+                    if c in ("bot_or_tool", "any_manual", "manual_other") and wn in ("W24h", "Winf") and clock == "from first revert":
                         for t in sorted(terc.dropna().unique()):
                             mt = m & (terc == t).to_numpy(); kt = int(mt.sum())
                             if kt < MINCELL: continue
-                            kft = int((fol & mt).sum()); lo, hi = wilson(kft, kt)
-                            R["fu"].append(dict(wiki=wiki, rule=rule, clock=clock, W=wn, first_class=c, stratum=f"page activity tercile {int(t)+1}",
-                                                n_first=kt, followup_third_party=kft / kt, lo=lo, hi=hi))
+                            kft = int((fol & mt).sum()); lo, hi = wilson(kft, kt); krt = int((inw(rtp_after, ws) & mt).sum()); rlo, rhi = wilson(krt, kt)
+                            R["fu"].append(dict(wiki=wiki, rule=rule, clock=clock, W=wn, first_class=c, stratum=SLAB[int(t)],
+                                                n_first=kt, followup_third_party=kft / kt, lo=lo, hi=hi,
+                                                followup_registered_third_party=krt / kt, reg_lo=rlo, reg_hi=rhi))
         # class of the next revert by anyone
         a2 = A[f"{rule}_any2_sec"].astype(float).notna().to_numpy(); a2bot = boolcol(A[f"{rule}_any2_bot"]); a2tool = boolcol(A[f"{rule}_any2_tool"])
         for c, gm in groupsets[:2]:
@@ -252,10 +264,12 @@ def sample_tables(wiki, R):
 
 
 def main():
-    wikis = sys.argv[1:] or WIKIS
-    R = {k: [] for k in ["comp", "ret", "h4", "fu", "win", "tag", "ctx"]}
+    args = sys.argv[1:]; sample_only = "--sample-only" in args  # skip the full-cohort tables (memory-heavy for English)
+    wikis = [a for a in args if not a.startswith("--")] or WIKIS
+    R = {k: [] for k in (["fu", "win", "tag", "ctx"] if sample_only else ["comp", "ret", "h4", "fu", "win", "tag", "ctx"])}
     for w in wikis:
-        composition(w, R)
+        if not sample_only:
+            composition(w, R)
         if os.path.exists(os.path.join(D, f"{w}_decomp.parquet")):
             sample_tables(w, R)
         print("done", w, flush=True)

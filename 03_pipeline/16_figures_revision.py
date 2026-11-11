@@ -1,4 +1,4 @@
-"""Figures for the revised manuscript (v0.4). Reads 04_output/rev_*.csv; writes 05_manuscript/figures_v04/Figure1..4.(png|pdf) at 300 dpi.
+"""Figures for the revised manuscript (v0.5). Reads 04_output/rev_*.csv; writes 05_manuscript/figures_v05/Figure1..4.(png|pdf) at 300 dpi.
 
 Figure 1  Who makes the first revert of a newcomer's first edit within 24 hours (stacked, in percent of all first edits)
 Figure 2  Follow-up manual reverts by a third party after the first revert (clock from the first revert), by who reverted first, under two attribution rules
@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-O = os.path.join(ROOT, "04_output"); FIG = os.path.join(ROOT, "05_manuscript", "figures_v04")
+O = os.path.join(ROOT, "04_output"); FIG = os.path.join(ROOT, "05_manuscript", "figures_v05")
 WIKIS = ["enwiki", "itwiki", "kowiki", "dewiki", "plwiki", "frwiki", "jawiki"]
 NAME = {"enwiki": "English", "itwiki": "Italian", "kowiki": "Korean", "dewiki": "German", "plwiki": "Polish", "frwiki": "French", "jawiki": "Japanese"}
 CONF = {"jawiki", "plwiki", "itwiki"}
@@ -65,17 +65,17 @@ def fig2():
             ax = axes[i, j]
             for k, w in enumerate(WIKIS[::-1]):
                 for cls, col, mk, dy, label in [("bot_or_tool", ORANGE, "o", 0.16, "First revert by a bot or one-click tool"),
-                                                ("any_manual", AQUA, "s", -0.16, "First revert manual, by someone other than the author")]:
+                                                ("manual_other", AQUA, "s", -0.16, "First revert manual, by another registered editor")]:
                     r = f[(f.wiki == w) & (f.rule == rule) & (f.W == wn) & (f.first_class == cls)]
                     if r.empty: continue
                     r = r.iloc[0]
-                    ax.errorbar(r.followup_third_party * 100, k + dy, xerr=[[(r.followup_third_party - r.lo) * 100], [(r.hi - r.followup_third_party) * 100]], fmt=mk, ms=4.5, color=col,
+                    ax.errorbar(r.followup_registered_third_party * 100, k + dy, xerr=[[(r.followup_registered_third_party - r.reg_lo) * 100], [(r.reg_hi - r.followup_registered_third_party) * 100]], fmt=mk, ms=4.5, color=col,
                                 ecolor=col, elinewidth=1, capsize=0, label=label if k == 0 else None, markeredgecolor="white", markeredgewidth=0.6)
             ax.set_title(f"{rname}, {wname}", fontsize=8); ax.xaxis.grid(True, lw=0.3, color="#dddddd"); ax.set_axisbelow(True)
-            ax.set_xlim(0, 40 if rule == "d3" else 6.5); ax.set_yticks(range(len(WIKIS))); ax.set_yticklabels([lab(w) for w in WIKIS[::-1]])
+            ax.set_xlim(0, 30 if rule == "d3" else 4.5); ax.set_yticks(range(len(WIKIS))); ax.set_yticklabels([lab(w) for w in WIKIS[::-1]])
     h, l = axes[0, 0].get_legend_handles_labels()
     fig.legend(h, l, fontsize=7.5, frameon=False, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.03))
-    fig.supxlabel("First edits with a later manual revert by a third party (%)", fontsize=8.5)
+    fig.supxlabel("First edits with a later manual revert by a registered third party (%)", fontsize=8.5)
     fig.tight_layout(rect=(0, 0, 1, 0.97)); save(fig, "Figure2")
 
 
