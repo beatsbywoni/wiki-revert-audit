@@ -21,3 +21,6 @@
 
 ## 2026-11-12 (round 6, manuscript v0.10)
 - Claude (claude-fable-5-2): internal pre-submission check (round 6); script `23_tag_radius_crosstab.py`; derivation of the "recoverable" entries of the conservative tally from the notes of the author's check (to be confirmed by the author); manuscript, supplement and cover letter v0.10. Retrieval and term-count screening of candidate texts in the review of practice were run through Claude's web tools and a scripted browser session; this is now stated in the manuscript.
+
+## 2026-11-12 (round 7, manuscript v0.11)
+- Claude (claude-fable-5-2): internal pre-submission check (round 7); reading of the JASIST author guidelines and of recent JASIST abstracts through the author's browser session; script `24_tag_cluster.py`; restructuring and shortening of the manuscript (v0.11), supplement and cover letter.
