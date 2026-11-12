@@ -1,0 +1,6 @@
+fixture,pages,revisions_checked,reverted_under_mwreverts,mismatches
+"random, few states",400,13152,12022,0
+"random, many states",400,12814,9625,0
+edit war (two states alternating with noise),400,12724,11577,0
+consecutive identical hashes,400,12616,8580,0
+restoration at the 15-revision boundary,400,8991,2796,0

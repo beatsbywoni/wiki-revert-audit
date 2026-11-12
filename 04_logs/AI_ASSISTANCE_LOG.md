@@ -27,3 +27,7 @@
 
 ## 2026-11-12 (round 8, manuscript v0.12)
 - Claude (claude-fable-5-2): internal pre-submission check (round 8); verification of reviewer points against the MediaWiki manual, core source and Wikimedia configuration; scripts `24_tag_cluster.py` (per-edition groups) and `25_retention_existing_pages.py`; manuscript, supplement and cover letter v0.12.
+
+## 2026-11-12 (pre-submission instruction memo, manuscript v0.13)
+- ChatGPT (OpenAI): produced a revision instruction memo (ten items) from the submission package, at the author's request.
+- Claude (claude-fable-5-2): checked each item of the memo against the registered text, code, derived files and MediaWiki sources; wrote `26_attribution_validation.py`; revised manuscript, supplement, cover letter and README (v0.13). Simulated reviews and this memo are internal checks by language models, not peer review.
