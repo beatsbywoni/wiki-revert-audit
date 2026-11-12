@@ -18,6 +18,9 @@ from docx.oxml.ns import qn
 from docx.shared import Pt, Inches
 
 
+DENSE = False
+
+
 def preprocess(md, figdir):
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
     def fig(m):
@@ -96,7 +99,7 @@ def style_doc(path):
             lens.append(mx)
         tot = sum(lens); widths = [max(0.42, 6.5 * l / tot) for l in lens]
         scale = 6.5 / sum(widths); widths = [w * scale for w in widths]
-        size = 8 if ncol >= 10 else 9
+        size = (7 if ncol >= 9 else 8 if ncol >= 6 else 9) if DENSE else (8 if ncol >= 10 else 9)
         tblPr = t._tbl.tblPr
         layout = tblPr.makeelement(qn("w:tblLayout"), {qn("w:type"): "fixed"}); tblPr.append(layout)
         tblW = tblPr.find(qn("w:tblW"))
@@ -120,6 +123,7 @@ def style_doc(path):
         txt = p.text.strip()
         if re.match(r"^(Table|Figure) S?\d+\.", txt):
             p.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+            if txt.startswith("Table"): p.paragraph_format.keep_with_next = True   # 캡션과 표를 같은 쪽에
             for r in p.runs: set_run_font(r, size=10)
         for r in p.runs:
             if r.font.name is None: set_run_font(r)
@@ -130,7 +134,8 @@ def style_doc(path):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("inp"); ap.add_argument("out")
-    ap.add_argument("--figdir", default=None); ap.add_argument("--pdf", action="store_true"); a = ap.parse_args()
+    ap.add_argument("--figdir", default=None); ap.add_argument("--pdf", action="store_true"); ap.add_argument("--dense", action="store_true", help="smaller type in wide tables (supplement)"); a = ap.parse_args()
+    global DENSE; DENSE = a.dense
     figdir = a.figdir or os.path.join(os.path.dirname(os.path.abspath(a.inp)), "figures")
     md = preprocess(open(a.inp, encoding="utf-8").read(), figdir)
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as fh:

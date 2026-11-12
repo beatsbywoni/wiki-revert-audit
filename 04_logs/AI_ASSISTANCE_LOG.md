@@ -31,3 +31,4 @@
 ## 2026-11-12 (pre-submission instruction memo, manuscript v0.13)
 - ChatGPT (OpenAI): produced a revision instruction memo (ten items) from the submission package, at the author's request.
 - Claude (claude-fable-5-2): checked each item of the memo against the registered text, code, derived files and MediaWiki sources; wrote `26_attribution_validation.py`; revised manuscript, supplement, cover letter and README (v0.13). Simulated reviews and this memo are internal checks by language models, not peer review.
+- 2026-11-12, second instruction memo (ChatGPT, seven items): checked and applied by Claude (claude-fable-5-2); manuscript, supplement, cover letter v0.14; submission package v3.
