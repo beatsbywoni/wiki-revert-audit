@@ -14,3 +14,7 @@
 - Literature review: first-pass coding of 41 studies by the model from full texts; all codes checked against quoted sentences (7 of the first 34 studies corrected); blind second pass by a separate model instance on 13 studies (72 of 78 judgments agree). Search of LIS and neighbouring journals via OpenAlex by a model agent (record in 04_output/practice_review_LIS_search.md).
 - Prose: manuscript v0.4, supplement text, cover letter drafted and edited with AI assistance.
 - Internal pre-submission checks: three rounds in which model agents acted as an editor and three reviewers of the draft; their reports led to corrections recorded in WORKLOG.md and DEVIATION_LOG.md. No data were generated, altered or imputed by the model.
+
+## 2026-11-12 (review of practice, author check)
+- ChatGPT (OpenAI; version reported by the author as 6.1 Astra) assisted the author's check of the review coding for the four studies added on 12 November 2026 (Morris-O'Connor et al. 2023; Ariel 2026; Arazy et al. 2019; Gao et al. 2026). Its points were compared with the source passages before any code was changed.
+- Claude (claude-fable-5-2): full-text reading of candidate studies through institutional access, re-verification of the author's check against sources, manuscript v0.7 to v0.9, internal pre-submission checks (rounds 4 and 5).
