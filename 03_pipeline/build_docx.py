@@ -85,6 +85,7 @@ def style_doc(path):
     # 표: 열 폭을 내용 길이에 비례해 고정(총 6.5 in), 넓은 표는 8pt, 얇은 테두리
     for t in d.tables:
         ncol = len(t.columns)
+        if ncol == 0: continue
         lens = []
         for ci in range(ncol):
             mx = 1

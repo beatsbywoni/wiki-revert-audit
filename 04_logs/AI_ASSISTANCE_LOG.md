@@ -18,3 +18,6 @@
 ## 2026-11-12 (review of practice, author check)
 - ChatGPT (OpenAI; version reported by the author as 6.1 Astra) assisted the author's check of the review coding for the four studies added on 12 November 2026 (Morris-O'Connor et al. 2023; Ariel 2026; Arazy et al. 2019; Gao et al. 2026). Its points were compared with the source passages before any code was changed.
 - Claude (claude-fable-5-2): full-text reading of candidate studies through institutional access, re-verification of the author's check against sources, manuscript v0.7 to v0.9, internal pre-submission checks (rounds 4 and 5).
+
+## 2026-11-12 (round 6, manuscript v0.10)
+- Claude (claude-fable-5-2): internal pre-submission check (round 6); script `23_tag_radius_crosstab.py`; derivation of the "recoverable" entries of the conservative tally from the notes of the author's check (to be confirmed by the author); manuscript, supplement and cover letter v0.10. Retrieval and term-count screening of candidate texts in the review of practice were run through Claude's web tools and a scripted browser session; this is now stated in the manuscript.
