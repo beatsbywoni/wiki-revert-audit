@@ -24,3 +24,6 @@
 
 ## 2026-11-12 (round 7, manuscript v0.11)
 - Claude (claude-fable-5-2): internal pre-submission check (round 7); reading of the JASIST author guidelines and of recent JASIST abstracts through the author's browser session; script `24_tag_cluster.py`; restructuring and shortening of the manuscript (v0.11), supplement and cover letter.
+
+## 2026-11-12 (round 8, manuscript v0.12)
+- Claude (claude-fable-5-2): internal pre-submission check (round 8); verification of reviewer points against the MediaWiki manual, core source and Wikimedia configuration; scripts `24_tag_cluster.py` (per-edition groups) and `25_retention_existing_pages.py`; manuscript, supplement and cover letter v0.12.

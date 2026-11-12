@@ -2,7 +2,7 @@
 
 For first edits of self-created accounts from October 2020 that are reverted under the 15-revision radius rule (page-history samples),
 the script reports the share whose measured edit carries no mw-reverted tag, by class of first reverter and, for tool and other
-manual reverters, by whether the reverting account held an autopatrol-carrying group at the time of the revert. Each cell has the
+manual reverters, by whether the reverting account held, at the time of the revert, a group that carries the autopatrol or autoreview right in that edition. Each cell has the
 number of reverts, the number of reverting accounts, the share of reverts made by the most active account, a Wilson interval and a
 percentile interval from 2,000 resamples of reverting accounts (unregistered reverters and self-reverts are their own clusters).
 Output: 04_output/rev_taggap_cluster.csv
@@ -16,6 +16,13 @@ D = os.path.join(ROOT, "02_derived"); OUT = os.path.join(ROOT, "04_output")
 WIKIS = ["enwiki", "itwiki", "kowiki", "dewiki", "plwiki", "frwiki", "jawiki"]; SEED = 20261112; B = 2000; MINCELL = 50
 AUTOP = {"autopatrolled", "autoreviewer", "sysop", "bot", "rollbacker", "patroller", "editor", "reviewer", "bureaucrat", "interface-admin",
          "checkuser", "suppress", "oversight", "steward", "abusefilter", "flood", "botadmin", "mover"}
+
+
+# Groups that carry the autopatrol right (recent-changes patrolling) or the autoreview right (FlaggedRevs) in each edition's own
+# configuration (operations/mediawiki-config, core-Permissions.php and flaggedrevs.php, read 12 November 2026; sysop and bot by core default).
+# Editions without either regime keep the union list, which has no bearing there.
+AUTOP_BY_WIKI = {"itwiki": {"autopatrolled", "botadmin", "rollbacker", "sysop", "bot"}, "frwiki": {"autopatrolled", "sysop", "bot"},
+                 "dewiki": {"editor", "reviewer", "autoreview", "sysop", "bot"}, "plwiki": {"editor", "reviewer", "autoreview", "sysop", "bot"}}
 
 
 def b(s): return s.fillna(False).astype(bool).to_numpy()
@@ -35,7 +42,7 @@ def main():
         G = pd.read_csv(os.path.join(D, f"{w}_revgroups.tsv"), sep="\t", dtype=str, usecols=["revision_id", "event_user_groups_historical"]).drop_duplicates("revision_id")
         G["event_user_groups_historical"] = G.event_user_groups_historical.fillna("")
         G.index = G.revision_id.astype("int64"); gh = A.d3r_first_rev.astype("int64").map(G.event_user_groups_historical)
-        known = gh.notna().to_numpy(); has_ap = gh.fillna("").map(lambda s: bool(set(x for x in s.split(",") if x) & AUTOP)).to_numpy()
+        known = gh.notna().to_numpy(); AP = AUTOP_BY_WIKI.get(w, AUTOP); has_ap = gh.fillna("").map(lambda s: bool(set(x for x in s.split(",") if x) & AP)).to_numpy()
         anon = b(A.d3r_first_anon); bot = b(A.d3r_first_bot) & ~anon; selfr = (A.d3r_first_user == A.user_id).to_numpy() & ~anon & ~bot
         tool = b(A.d3r_first_tool) & ~anon & ~bot & ~selfr; man = ~anon & ~bot & ~selfr & ~tool
         un = ~b(A.is_reverted_d2)

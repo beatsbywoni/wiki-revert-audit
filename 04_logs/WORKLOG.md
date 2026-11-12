@@ -279,3 +279,10 @@
 - 코어 소스 확인: EditResultCache.php (승인 대기 정보는 $wgRCMaxAge 까지만 보관), config-schema.yaml (ManualRevertSearchRadius 와 RevertedTagMaxDepth 는 별개 설정, 기본값 모두 15). T258339 는 Phabricator 접속 실패로 날짜 미확인 → 연도 표현 삭제.
 - 예시 서술 수정: 변화 3.8점 중 이탈리아어 3.2, 영어 0.6; 영어 태그 전용 292건의 원인은 "가능성"으로만 기술(되돌린 판 미확인).
 - 본문 6,900단어(표·캡션·미주 포함), 초록 200단어, 참고문헌 40건 모두 인용. practice_review.csv 의 Priedhorsky 메모 문구 정정(모델이 2차 확인용 사본을 못 구함; 저자 점검은 완료).
+
+## 2026-11-12 15:10 KST (8차 심사, 최종 수정 v0.12)
+- 8차(v0.11): 에디터 회부(경계선) 55%(40~70); 리뷰어 A·B·C 모두 Major(B 는 하단, C 는 개념·구성 수정 중심). 원문 _release/review_sim_r8/. B 수치 감사 311개 중 3개 불일치(모두 태그 누락률 계정 재표집 구간의 반올림·실행 혼용: 7.6→7.7, 12.4→12.3, 8.5→8.4). C: 표 2 전 칸 재현, 참고문헌 40건 대응, 16건 Crossref 확인; 문헌 조사는 현재 위치로 2차 코더 없이 수용 가능. A: MediaWiki·설정 주장 오류 없음, FlaggedRevs 승인 조건 서술 불완전 지적.
+- 원자료 확인: Manual:Reverts (FlaggedRevs 에서 즉시 승인: 검토 대상 아닌 문서, autoreview 권한, 자기 되돌림; 저장 전 수정한 undo 는 1.36부터 undo 로 표시 안 됨). DerivedPageDataUpdater.php (EditResult 캐시는 UseRCPatrol 이 켜진 위키에서만). core-Permissions.php 판별 자동순찰 그룹: itwiki autopatrolled·botadmin·rollbacker(+sysop·bot), frwiki autopatrolled(+sysop·bot); dewiki·plwiki 는 autoreview 권한 그룹(editor·reviewer·autoreview).
+- 24_tag_cluster.py: 그룹 정의를 판별 설정으로 교체. 이탈리아어 77.1% [71.8, 81.9]·1.0% 불변; 독일어·폴란드어 그룹 없음 20.4%, 21.6%; 프랑스어 3.7%.
+- 25_retention_existing_pages.py (탐색적): 문서 생성 첫 편집을 기준 집단에서 빼도 잔류 대비 유지(도구 OR 0.09~0.37, 수동 0.40~0.67).
+- v0.12: 초록에 수치 4개(25~52%, 77% 대 1%, 3.6→7.4)와 범위 한정; 연구 질문 3개 + 등록 검정 1개; 배경에 "승인된 일만 기록하는 문서" 논증(Suchman 1995, Star & Strauss 1999, Buckland 1997, Geiger & Ribes 2011; 서지 Crossref 확인) 추가; FlaggedRevs 승인 조건 정정; 태그 절 제목을 기술적 표현으로, 기제는 추론임을 명시, 설명 안 되는 세 가지 명시; H3 일본어판 단서 복원; 등록 검정을 한 소절 한 단락으로 축소하고 표 4(후속 되돌림)·그림 2 는 보충자료(표 S4·S10, 그림 S3)로; 태그 결과를 네 구성개념에 연결; 표 2 에 "복원 가능" 열 추가, 관찰 창 분모 20(Stvilia 2007 은 문서 단위라 제외); 그림 번호 1·2·3, 표 1~4, 미주 순서 정정; Okoli·Mesgari 인용 삭제. 본문 6,879단어, 초록 200단어, 참고문헌 42건.
